@@ -41,9 +41,6 @@ class Neurons extends Component {
                             </div>
 
                         </div>
-                        {/*<div className="col-7 d-flex  justify-content-end">*/}
-                        {/*    /!*<img src="assets/images/section-1/brain_image.png"/>*!/*/}
-                        {/*</div>*/}
                     </Jumbotron>
                 </div>
             </div>

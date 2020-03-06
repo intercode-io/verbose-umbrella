@@ -13,7 +13,6 @@ class ServicesWeProvide extends Component {
                     <div className="row services-list-row">
                         <div className="col-sm-12 col-md-12 col-lg-12">
                             <div className="row services-first-row">
-                                {/*<ServicesFirstRow />*/}
                                 <div className="col-sm-12 col-md-6 col-lg-3 offset-lg-0 swp-item">
                                     <div className="blue-circles mobile-circle"></div>
                                     <text className="service-title">Prototyping/MVP</text>
