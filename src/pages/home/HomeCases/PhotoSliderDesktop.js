@@ -23,51 +23,29 @@ const CasesImages = ({images}) => {
             </div>
         );
 
-    }
-    else {
+    } else {
         return (
-            <div>NOPE</div>
+            <div> </div>
         );
     }
 };
 
 function RenderImage({image}) {
-    // const titledImages = images.map((img) => {
-    //     return (
-    //         <div key={img.id} className="col-12 col-md-5 m-1">
-    //             <RenderImage image={img}/>
-    //         </div>
-    //     );
-    // });
-    //
-    // return (
-    //     <div className="container">
-    //         <div className="row">
-    //             {titledImages}
-    //         </div>
-    //     </div>
-    // );
 
     if (image) {
-        console.log(image);
-
         return (
-            <div className="container">
-                <div className="row">
-                    <div className="">
-                        <Card>
-                            <CardBody>
-                                <CardTitle className="cases-image-title">{image.title}</CardTitle>
-                                <CardImg width="100%" src={image.src} alt={image.name}/>
-                            </CardBody>
-                        </Card>
-                    </div>
-                </div>
+            <div className="">
+                <Card>
+                    <CardBody>
+                        <CardTitle className="cases-image-title">{image.title}</CardTitle>
+                        <CardImg width="100%" src={image.src} alt={image.name}/>
+                    </CardBody>
+                </Card>
             </div>
         )
     } else {
         return (
-            <div>123</div>
+            <div> </div>
         )
     }
 }
