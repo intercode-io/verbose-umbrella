@@ -5,36 +5,60 @@ import Card from "reactstrap/es/Card";
 import CardBody from "reactstrap/es/CardBody";
 
 
-const CasesImages = ({props}) => {
-    const titledImages = props.images.map((img) => {
+const CasesImages = ({images}) => {
+    if (images) {
+        const titledImages = images.map((img) => {
+            return (
+                <div key={img.id} className="col-12 col-md-5">
+                    <RenderImage image={img}/>
+                </div>
+            );
+        });
+
         return (
-            <div key={img.id} className="col-12 col-md-5 m-1">
-                <RenderImage image={img}/>
+            <div className="container">
+                <div className="row">
+                    {titledImages}
+                </div>
             </div>
         );
-    });
 
-    return (
-        <div className="container">
-            <div className="row">
-                {titledImages}
-            </div>
-        </div>
-    );
+    }
+    else {
+        return (
+            <div>NOPE</div>
+        );
+    }
 };
 
 function RenderImage({image}) {
+    // const titledImages = images.map((img) => {
+    //     return (
+    //         <div key={img.id} className="col-12 col-md-5 m-1">
+    //             <RenderImage image={img}/>
+    //         </div>
+    //     );
+    // });
+    //
+    // return (
+    //     <div className="container">
+    //         <div className="row">
+    //             {titledImages}
+    //         </div>
+    //     </div>
+    // );
+
     if (image) {
         console.log(image);
 
         return (
             <div className="container">
                 <div className="row">
-                    <div className="col-12 col-md-5 m-1">
+                    <div className="">
                         <Card>
-                            <CardImg width="100%" src={image.image} alt={image.name}/>
                             <CardBody>
-                                <CardTitle>{image.title}</CardTitle>
+                                <CardTitle className="cases-image-title">{image.title}</CardTitle>
+                                <CardImg width="100%" src={image.src} alt={image.name}/>
                             </CardBody>
                         </Card>
                     </div>

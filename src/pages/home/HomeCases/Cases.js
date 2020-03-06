@@ -8,8 +8,8 @@ class Cases extends Component {
 
     constructor(props) {
         const imagesarray = [
-            {title:'Respage', src:"../assets/images/mobile/Carousel/2.png"},
-            {title:'PepTalkHer', src:"../assets/images/mobile/Carousel/1.png"}
+            {id: 1, title:'Respage', src:"assets/images/desktop/Respage.png"},
+            {id: 2, title:'PepTalkHer', src:"/assets/images/desktop/PepTalkHer.png"}
         ];
         super(props);
         this.state = {
