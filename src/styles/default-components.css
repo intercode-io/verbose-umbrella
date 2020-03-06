@@ -1,0 +1,12 @@
+.swiper-slide-duplicate-active {
+    margin-top: 35px;
+}
+
+/*not active bullet*/
+.swiper-pagination-bullet {
+    background-color: #FFFFFF;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #7AEEF1;
+}

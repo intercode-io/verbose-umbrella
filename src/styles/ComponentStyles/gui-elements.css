@@ -1,0 +1,10 @@
+/*circles*/
+
+.blue-circles {
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    background: #7AEEF1;
+    border: 0;
+    margin-right: 20px;
+}
