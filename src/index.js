@@ -13,11 +13,11 @@ import './styles/ComponentStyles/text.css'
 import './styles/ComponentStyles/bootstrap-classes.css'
 import './styles/ComponentStyles/gui-elements.css'
 
-import './styles/HeaderSection.css'
-import './styles/NeuronsSection.css'
-import './styles/ServicesWeProvideSection.css'
-import './styles/CasesSection.css'
-import './styles/OurBenefitsSection.css'
+import './components/HeaderSection.css'
+import './pages/home/HomeNeurons/NeuronsSection.css'
+import './pages/home/HomeServicesWeProvide/ServicesWeProvideSection.css'
+import './pages/home/HomeCases/CasesSection.css'
+import './pages/home/HomeOurBenefits/OurBenefitsSection.css'
 import './styles/default-components.css'
 
 import App from './App';

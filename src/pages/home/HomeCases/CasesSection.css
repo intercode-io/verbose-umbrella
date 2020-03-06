@@ -49,12 +49,13 @@
 }
 
 .cases-shadow-span {
+    font-family: HelveticaNeueCyr, serif;
     position: absolute;
-    font-size: 40pt;
-    filter: blur(10px);
-    opacity: 60%;
-    top: -5px;
-    left: 32%;
+    font-size: 40px;
+    filter: blur(2px);
+    opacity: 20%;
+    top: -17px;
+    left: 31%;
 }
 /*.header-text-group{*/
 /*    padding-bottom: 60px;*/
@@ -69,6 +70,7 @@
 
 .cases-view-more-text {
     font-size: 14px;
+    font-weight: normal;
 }
 
 
@@ -98,12 +100,10 @@
 
     .cases-shadow-span {
         position: absolute;
-        font-size: 64pt;
-        filter: blur(10px);
-        top: -10px;
+        font-size: 64px;
+        top: -25px;
         left: 36%;
     }
-
 }
 
 @media (min-width: 850px) {

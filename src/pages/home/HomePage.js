@@ -1,15 +1,15 @@
 import React, {Component} from "react";
-import HomeNeurons from "./HomeNeurons/HomeNeurons";
+import Neurons from "./HomeNeurons/Neurons";
 import ServicesWeProvide from "./HomeServicesWeProvide/ServicesWeProvide";
-import HomeCases from "./HomeCases/HomeCases";
+import Cases from "./HomeCases/Cases";
 
 class HomePage extends Component {
     render() {
         return (
             <div className="container">
-                <HomeNeurons />
+                <Neurons />
                 <ServicesWeProvide />
-                <HomeCases />
+                <Cases />
             </div>
         )
     }

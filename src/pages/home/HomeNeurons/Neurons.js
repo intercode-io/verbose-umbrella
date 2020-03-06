@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import Header from "../../../components/HeaderComponent";
 import Jumbotron from "react-bootstrap/Jumbotron";
 
-class HomeNeurons extends Component {
+class Neurons extends Component {
     render() {
         return (
 
@@ -52,4 +52,4 @@ class HomeNeurons extends Component {
 }
 
 
-export default HomeNeurons;
+export default Neurons;

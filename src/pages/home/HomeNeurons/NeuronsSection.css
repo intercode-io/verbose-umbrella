@@ -97,7 +97,11 @@
 
 @media (min-width: 768px) {
     .neurons-section::before {
-        max-height: 850px;
+        max-height: 890px;
+    }
+
+    .neurons-section {
+        max-height: 890px;
     }
 
     .header-text{
