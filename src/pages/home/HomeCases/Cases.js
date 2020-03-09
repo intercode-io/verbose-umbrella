@@ -30,9 +30,9 @@ class Cases extends Component {
         };
 
         return (
-            <div className="row cases-section">
+            <div className="row cases-section section-dimensions">
                 <div className="col-12">
-                    <div className="container-fluid cases-section-inside">
+                    <div className="container-fluid cases-section-inside section-dimensions">
                         <div className="row">
                             <div className="col-sm-12 cases-header">
                                 <h1>Cases<span className="cases-shadow-span">Cases</span></h1>

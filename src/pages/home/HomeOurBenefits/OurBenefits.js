@@ -4,7 +4,7 @@ import './OurBenefitsSection.scss'
 class ServicesWeProvide extends Component {
     render() {
         return (
-            <div className="row swp-row">
+            <div className="swp-row">
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-sm-12 services-we-provide-header">

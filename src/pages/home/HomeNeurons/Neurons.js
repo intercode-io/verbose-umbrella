@@ -7,9 +7,9 @@ class Neurons extends Component {
     render() {
         return (
 
-            <div className="row neurons-section">
+            <div className="row neurons-section section-dimensions">
                 <div className="col-12">
-                    <Jumbotron className="neurons-section-inside">
+                    <Jumbotron className="neurons-section-inside section-dimensions">
                         <Header/>
 
                         <div className="container-fluid">
