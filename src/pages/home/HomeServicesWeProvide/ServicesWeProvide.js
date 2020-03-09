@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import './ServicesWeProvideSection.scss'
 
 class ServicesWeProvide extends Component {
     render() {
@@ -6,12 +7,12 @@ class ServicesWeProvide extends Component {
             <div className="row swp-row">
                 <div className="container-fluid">
                     <div className="row">
-                        <div className="col-sm-12 col-md-12 col-lg-12 services-we-provide-header">
+                        <div className="col-sm-12 services-we-provide-header">
                             <h2 className="service-header-title">Services we provide</h2>
                         </div>
                     </div>
                     <div className="row services-list-row">
-                        <div className="col-sm-12 col-md-12 col-lg-12">
+                        <div className="col-sm-12">
                             <div className="row services-first-row">
                                 <div className="col-sm-12 col-md-6 col-lg-3 offset-lg-0 swp-item">
                                     <div className="blue-circles mobile-circle"></div>

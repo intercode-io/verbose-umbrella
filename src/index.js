@@ -2,23 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 import 'swiper/css/swiper.css'
 
 
-import './index.css';
+import './index.scss';
 
-import './styles/ComponentStyles/buttons.css'
-import './styles/ComponentStyles/text.css'
-import './styles/ComponentStyles/bootstrap-classes.css'
-import './styles/ComponentStyles/gui-elements.css'
+import './styles/sections-styles.scss'
+import './styles/default-components.scss'
 
-import './components/HeaderSection.css'
-import './pages/home/HomeNeurons/NeuronsSection.css'
-import './pages/home/HomeServicesWeProvide/ServicesWeProvideSection.css'
-import './pages/home/HomeCases/CasesSection.css'
-import './pages/home/HomeOurBenefits/OurBenefitsSection.css'
-import './styles/default-components.css'
+import './styles/ComponentStyles/buttons.scss'
+import './styles/ComponentStyles/text.scss'
+import './styles/ComponentStyles/bootstrap-classes.scss'
+import './styles/ComponentStyles/gui-elements.scss'
 
 import App from './App';
 import * as serviceWorker from './serviceWorker';

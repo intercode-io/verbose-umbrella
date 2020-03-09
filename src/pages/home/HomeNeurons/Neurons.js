@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import Header from "../../../components/HeaderComponent";
 import Jumbotron from "react-bootstrap/Jumbotron";
+import './NeuronsSection.scss'
 
 class Neurons extends Component {
     render() {
@@ -14,9 +15,9 @@ class Neurons extends Component {
                         <div className="container-fluid">
 
                             <div className="row neurons-content-row">
-                                <div className="col-sm-12 col-md-12 col-lg-7">
+                                <div className="col-sm-12 col-lg-7">
                                     <div className="row">
-                                        <div className="col-sm-12 col-md-12 neurons-image-container">
+                                        <div className="col-sm-12 neurons-image-container">
                                             <img className="neurons-image"
                                                  src="../assets/images/brain_image.png"
                                                  alt=""/>
@@ -24,7 +25,7 @@ class Neurons extends Component {
                                     </div>
                                 </div>
 
-                                <div className="col-sm-12 col-md-12 col-lg-5">
+                                <div className="col-sm-12 col-lg-5">
                                     <div className="row neurons-text-and-button-row">
                                         <div className="header-text-group col-sm-12 col-md-8 col-lg-auto">
                                             <h1 className="header-text">Our Neurons <br/> Work For You</h1>
