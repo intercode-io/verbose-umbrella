@@ -8,7 +8,7 @@ class ServicesWeProvide extends Component {
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-sm-12 services-we-provide-header">
-                            <h2 className="service-header-title">Services we provide</h2>
+                            <h2 className="service-header-title section-header">Services we provide</h2>
                         </div>
                     </div>
                     <div className="row services-list-row">
