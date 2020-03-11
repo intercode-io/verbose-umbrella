@@ -1,0 +1,74 @@
+@import "../../../styles/colors.scss";
+
+.question-section {
+    background-image: url("./questions_bkg_mobile.png");
+    min-height: 500px;
+    height: 100%;
+    filter: opacity(0.1);
+
+    .questions-header {
+        margin-top: 20px;
+    }
+
+    .message-us-part {
+        margin-top: 50px;
+        //margin-left: 20px;
+    }
+
+    .input-form {
+        border-left: 0;
+        border-top: 0;
+        border-right: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-bottom-width: 2px;
+        border-bottom-color: $blue2;
+        outline: 0;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .send-btn-margins {
+        margin-top: 50px;
+    }
+
+    .contact-form {
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+
+    @media (min-width: 360px) {
+
+    }
+
+    @media (min-width: 480px) {
+
+    }
+
+    @media (min-width: 720px) {
+        .our-benefits-mobile {
+            display: none;
+        }
+
+        .benefits-tablet {
+            display: block;
+        }
+
+    }
+
+    @media (min-width: 991px) {
+        .benefits-row {
+            align-items: center;
+            margin-top: 100px;
+        }
+        .benefits-second {
+            margin-top: 0
+        }
+
+        .benefits-third {
+            margin-top: 0
+        }
+
+    }
+
+}

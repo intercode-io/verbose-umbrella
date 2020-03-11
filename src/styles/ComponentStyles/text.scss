@@ -14,8 +14,17 @@ h2 {
 
 h3 {
     font-family: Montserrat, serif;
-    font-weight: bold;
     font-size: 24px;
+}
+
+h4 {
+    font-family: Montserrat, serif;
+    font-size: 20px;
+}
+
+h4 {
+    font-family: Montserrat, serif;
+    font-size: 18px;
 }
 
 
@@ -41,6 +50,12 @@ li {
     height: 20px;
 }
 
+.info-text {
+    font-family: Montserrat, serif;
+    height: 16px;
+    font-weight: normal;
+}
+
 .button-text {
     font-family: Montserrat, serif;
     font-weight: bold;
@@ -58,6 +73,17 @@ li {
     font-weight: normal;
 }
 
+.contact-title {
+    font-family: Montserrat, serif;
+    font-size: 29px;
+}
+
+.text1 {
+    color: #48484848;
+    font-family: Montserrat, serif;
+    font-size: 16px;
+    line-height: 150%;
+}
 
 @media (min-width: 360px) {
     h1 {

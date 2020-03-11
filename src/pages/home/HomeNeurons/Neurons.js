@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import Header from "../../../components/HeaderComponent";
+import Header from "../../../components/HeaderComponent/HeaderComponent";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import './NeuronsSection.scss'
 

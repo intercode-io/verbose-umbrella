@@ -1,13 +1,13 @@
 .section-dimensions {
     height: 100vh;
     min-height: 610px;
-    max-height: 700px;
+    //max-height: 700px;
 }
 
 .section-dimensions::before {
     height: 100vh;
     min-height: 610px;
-    max-height: 700px;
+    //max-height: 700px;
 }
 
 .section-header {
@@ -27,36 +27,36 @@
 
     .section-dimensions {
         min-height: 750px;
-        max-height: 1000px;
+        //max-height: 1000px;
     }
 
     .section-dimensions::before {
         min-height: 750px;
-        max-height: 1000px;
+        //max-height: 1000px;
     }
 }
 
 @media (min-width: 991px) {
     .section-dimensions {
         min-height: 750px;
-        max-height: 1100px;
+        //max-height: 1100px;
     }
 
     .section-dimensions::before {
         min-height: 750px;
-        max-height: 1100px;
+        //max-height: 1100px;
     }
 }
 
 @media (min-width: 1200px) {
     .section-dimensions {
         min-height: 850px;
-        max-height: 1000px;
+        //max-height: 1000px;
     }
 
     .section-dimensions::before {
         min-height: 850px;
-        max-height: 1000px;
+        //max-height: 1000px;
     }
 }
 

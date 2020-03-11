@@ -1,7 +1,17 @@
+@import "../../styles/colors.scss";
+
 .btn-big {
-    background-color: #FFCD38;
+    background-color: $yellow;
     width: 280px;
     height: 50px;
+    outline: 0;
+}
+
+.send-btn {
+    background-color: $yellow;
+    width: 280px;
+    height: 50px;
+    outline: 0;
 }
 
 
@@ -18,10 +28,20 @@
         width: 220px;
         height: 60px;
     }
+
+    .send-btn {
+        width: 220px;
+        height: 60px;
+    }
 }
 
 @media (min-width: 992px) {
     .btn-big {
+        width: 270px;
+        height: 65px;
+    }
+
+    .send-btn {
         width: 270px;
         height: 65px;
     }
