@@ -1,0 +1,112 @@
+.neurons-section {
+    margin-bottom: 30px;
+}
+
+.neurons-section::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 0; left: 0;
+    width: 100vw;
+    background: radial-gradient(111% 111% at 74.29% -11%, #A93300 0%, #005570 100%), linear-gradient(127.43deg, #00D5C8 0%, #2200AA 100%);
+    background-blend-mode: difference, normal;
+    filter: brightness(0.3);
+}
+
+.neurons-section-inside {
+    /* This will make it stack on top of the ::before */
+    padding-top: 25px;
+    background-color: transparent;
+    position: relative;
+}
+
+
+.neurons-overlay {
+    position: relative;
+}
+
+.header-text-neurons {
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 45px;
+    margin-top: 10px;
+}
+
+.top-text-row {
+    justify-content: center;
+}
+
+.button-container {
+    text-align-last: center;
+}
+
+.neurons-image-container {
+    text-align: center;
+}
+
+.neurons-image {
+    width: 100%;
+}
+
+.decor-explore{
+    display: none;
+}
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+
+    .header-text-neurons{
+        margin-top: 0;
+        text-align: start;
+    }
+
+    .top-text-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .neurons-text-button{
+        display: flex;
+    }
+
+    .button-container {
+        align-items: center;
+    }
+
+    .button-text {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width: 850px) {
+
+}
+
+@media (min-width: 992px) {
+    .neurons-text-and-button-row {
+        flex-direction: column;
+        padding-top: 100px;
+    }
+
+    .neurons-content-row {
+        flex-direction: row-reverse;
+    }
+
+    .button-container {
+        display: flex;
+    }
+
+    .decor-explore{
+        display: flex;
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+}

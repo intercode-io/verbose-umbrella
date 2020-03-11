@@ -1,0 +1,101 @@
+@import "../colors.scss";
+
+h1 {
+    color: #FFFFFF;
+    font-family: HelveticaNeueCyr, cursive;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: HelveticaNeueCyr, serif;
+    font-weight: bold;
+    font-size: 42px;
+}
+
+h3 {
+    font-family: Montserrat, serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+
+p {
+    font-size: 14px;
+    font-family: Montserrat, serif;
+    font-weight: bold;
+    font-color: #FFFFFF;
+}
+
+li {
+    color: #FFFFFF;
+}
+
+.shadow-span {
+    position: absolute;
+    z-index: 1;
+    opacity: 10%;
+}
+
+.text {
+    font-family: Montserrat, serif;
+    height: 20px;
+}
+
+.button-text {
+    font-family: Montserrat, serif;
+    font-weight: bold;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+}
+
+.section-header-text {
+    //color: $white;
+    color: #000000;
+    font-size: 48px;
+    font-family: HelveticaNeueCyr, serif;
+    font-weight: normal;
+}
+
+
+@media (min-width: 360px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+}
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 64px;
+    }
+
+}
+
+@media (min-width: 992px) {
+    h1 {
+        font-size: 72px;
+    }
+
+    h2 {
+        font-size: 42px;
+    }
+
+    .service-title {
+        font-weight: 600;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+}

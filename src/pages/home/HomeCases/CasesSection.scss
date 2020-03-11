@@ -1,0 +1,123 @@
+//@import "././/colors.scss";
+
+.cases-section {
+    position: relative;
+}
+
+.cases-section::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 0; left: 0;
+    width: 100%;
+    background: linear-gradient(180deg, #FFFFFF 0%, #000000 100%), linear-gradient(90deg, #FFFFFF 0%, #000000 100%), #00FFFF;
+    background-blend-mode: multiply, screen, normal;
+    filter: brightness(0.2);
+}
+
+.cases-section-inside {
+    /* This will make it stack on top of the ::before */
+    padding-top: 25px;
+    background-color: transparent;
+    position: relative;
+}
+
+.cases-header {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+
+.cases-header-text{
+    color: #FFFFFF;
+}
+
+
+.neurons-overlay {
+    position: relative;
+}
+
+.top-text-row {
+    justify-content: center;
+}
+
+.cases-shadow-span {
+    font-family: HelveticaNeueCyr, serif;
+    position: absolute;
+    z-index: 0;
+    font-size: 40px;
+    filter: blur(2px);
+    opacity: 10%;
+    top: -17px;
+    left: 31%;
+}
+
+
+.cases-view-more {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.cases-view-more-text {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.desktop-swiper {
+    display: none;
+}
+
+.carousel-image {
+    flex: 1;
+    resizeMode: stretch;
+    width: 100%
+}
+
+.cases-image-title {
+    font-size: 29px;
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+    .cases-shadow-span {
+        position: absolute;
+        z-index: 1;
+        font-size: 64px;
+        top: -25px;
+        left: 36%;
+    }
+}
+
+@media (min-width: 850px) {
+
+}
+
+@media (min-width: 992px) {
+
+    .cases-header {
+        text-align: left;
+    }
+
+    .cases-shadow-span {
+        font-size: 50pt;
+        filter: blur(2px);
+        top: -15px;
+        left: 10px;
+    }
+
+    .mobile-tablet-swiper {
+        display: none;
+    }
+
+    .desktop-swiper {
+        display: flex;
+    }
+}
+
+@media (min-width: 1200px) {
+
+}
