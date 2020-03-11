@@ -4,7 +4,7 @@
 }
 
 .service-header-title {
-    text-shadow: 2px -20px 3px rgba(150, 150, 150, 0.59);
+    //text-shadow: 2px -20px 3px rgba(150, 150, 150, 0.59);
 }
 
 .service-header {
@@ -52,6 +52,12 @@
 }
 
 .swp-row {
+}
+
+.swp-shadow-span {
+    font-size: 60px;
+    top: 95px;
+    left: 23%;
 }
 
 @media (min-width: 360px) {

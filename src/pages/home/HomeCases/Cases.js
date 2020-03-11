@@ -1,24 +1,20 @@
 import React, {Component} from "react";
 import Swiper from 'react-id-swiper';
 import Image from "react-bootstrap/Image";
-import CasesImages from "./PhotoSliderDesktop";
+import PhotoSliderDesktop from "./PhotoSliderDesktop";
 import './CasesSection.scss'
 
 class Cases extends Component {
 
     constructor(props) {
+        super(props);
+
         const imagesarray = [
             {id: 1, title: 'Respage', src: "assets/images/desktop/Respage.png"},
             {id: 2, title: 'PepTalkHer', src: "/assets/images/desktop/PepTalkHer.png"}
         ];
-        super(props);
-        this.state = {
-            images: imagesarray,
-        }
-    }
 
-    render() {
-        const params = {
+        const swiperParams = {
             slidesPerView: 1,
             spaceBetween: 30,
             loop: true,
@@ -29,17 +25,26 @@ class Cases extends Component {
             },
         };
 
+        this.state = {
+            images: imagesarray,
+            swiperParams: swiperParams,
+        }
+    }
+
+    render() {
+
         return (
-            <div className="row cases-section section-dimensions">
-                <div className="col-12">
-                    <div className="container-fluid cases-section-inside section-dimensions">
+            <div className="container-fluid">
+                <div className="row section-dimensions  cases-section">
+                    <div className="container cases-section-inside section-dimensions">
                         <div className="row">
                             <div className="col-sm-12 cases-header">
-                                <h1>Cases<span className="cases-shadow-span">Cases</span></h1>
+                                <h1 className="section-header-text cases-header-text">Cases
+                                    <span className="cases-shadow-span shadow-span">Cases</span></h1>
                             </div>
                         </div>
                         <div className="row mobile-tablet-swiper">
-                            <Swiper {...params}>
+                            <Swiper {...this.state.swiperParams}>
                                 <div>
                                     <Image className="carousel-image"
                                            src="../assets/images/mobile/Carousel/1.png"
@@ -53,7 +58,7 @@ class Cases extends Component {
                             </Swiper>
                         </div>
                         <div className="row desktop-swiper">
-                            <CasesImages images={this.state.images}/>
+                            <PhotoSliderDesktop images={this.state.images}/>
                         </div>
                         <div className="row cases-view-more">
                             <h1 className="cases-view-more-text">VIEW MORE</h1>

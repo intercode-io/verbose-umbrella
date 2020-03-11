@@ -5,11 +5,11 @@ import Card from "reactstrap/es/Card";
 import CardBody from "reactstrap/es/CardBody";
 
 
-const CasesImages = ({images}) => {
+const PhotoSliderDesktop = ({images}) => {
     if (images) {
         const titledImages = images.map((img) => {
             return (
-                <div key={img.id} className="col-12 col-md-5">
+                <div key={img.id} className="col-12 col-md-5 offset-md-1">
                     <RenderImage image={img}/>
                 </div>
             );
@@ -24,31 +24,28 @@ const CasesImages = ({images}) => {
         );
 
     } else {
-        return (
-            <div> </div>
-        );
+        return null;
     }
 };
 
+/**
+ * @return {null}
+ */
 function RenderImage({image}) {
 
-    if (image) {
-        return (
-            <div className="">
-                <Card>
-                    <CardBody>
-                        <CardTitle className="cases-image-title">{image.title}</CardTitle>
-                        <CardImg width="100%" src={image.src} alt={image.name}/>
-                    </CardBody>
-                </Card>
-            </div>
-        )
+    if (!image) {
+        return null;
     } else {
         return (
-            <div> </div>
+            <Card>
+                <CardBody>
+                    <CardTitle className="cases-image-title"><b>{image.title}</b></CardTitle>
+                    <CardImg width="100%" src={image.src} alt={image.name}/>
+                </CardBody>
+            </Card>
         )
     }
 }
 
 
-export default CasesImages;
+export default PhotoSliderDesktop;

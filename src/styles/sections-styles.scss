@@ -24,6 +24,16 @@
     .section-dimensions {
         min-height: 768px;
     }
+
+    .section-dimensions {
+        min-height: 750px;
+        max-height: 1000px;
+    }
+
+    .section-dimensions::before {
+        min-height: 750px;
+        max-height: 1000px;
+    }
 }
 
 @media (min-width: 991px) {

@@ -1,3 +1,5 @@
+//@import "././/colors.scss";
+
 .cases-section {
     position: relative;
 }
@@ -26,16 +28,13 @@
     margin-bottom: 35px;
 }
 
+.cases-header-text{
+    color: #FFFFFF;
+}
+
 
 .neurons-overlay {
     position: relative;
-}
-
-.header-text {
-    color: #FFFFFF;
-    text-align: center;
-    margin-bottom: 45px;
-    margin-top: 10px;
 }
 
 .top-text-row {
@@ -48,7 +47,7 @@
     z-index: 0;
     font-size: 40px;
     filter: blur(2px);
-    opacity: 20%;
+    opacity: 10%;
     top: -17px;
     left: 31%;
 }
@@ -76,6 +75,9 @@
     width: 100%
 }
 
+.cases-image-title {
+    font-size: 29px;
+}
 
 @media (min-width: 576px) {
 }
@@ -101,11 +103,10 @@
     }
 
     .cases-shadow-span {
-        font-size: 72pt;
-        filter: blur(10px);
-        opacity: 60%;
-        top: -20px;
-        left: 0;
+        font-size: 50pt;
+        filter: blur(2px);
+        top: -15px;
+        left: 10px;
     }
 
     .mobile-tablet-swiper {

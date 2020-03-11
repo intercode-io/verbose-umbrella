@@ -4,8 +4,11 @@ import Swiper from "react-id-swiper";
 import Image from "react-bootstrap/Image";
 
 class OurBenefits extends Component {
-    render() {
-        const params = {
+
+    constructor(props) {
+        super(props);
+
+        const swiperParams = {
             slidesPerView: 1,
             spaceBetween: 30,
             loop: true,
@@ -16,9 +19,14 @@ class OurBenefits extends Component {
             },
         };
 
+        this.state = {
+            swiperParams: swiperParams,
+        }
+    }
+    render() {
+
         return (
-            <div className="section-dimensions benefits-section">
-                <div className="container-fluid">
+            <div className="container section-dimensions benefits-section">
                     <div className="row">
                         <div className="col-sm-12">
                             <h2 className="section-header">Our benefits</h2>
@@ -26,7 +34,7 @@ class OurBenefits extends Component {
                     </div>
                     <div className="row benefits-row">
                         <div className="col-sm-12 our-benefits-mobile">
-                            <Swiper {...params}>
+                            <Swiper {...this.state.swiperParams}>
                                 <div className="benefit-item">
                                     <h3>High quality code</h3>
                                     <br/>
@@ -52,14 +60,14 @@ class OurBenefits extends Component {
                             </Swiper>
                         </div>
 
-                        <div className="col-md-4 col-lg-2 offset-lg-1 benefits-tablet benefits-first">
+                        <div className="col-md-4 col-lg-3 offset-lg-1 benefits-tablet benefits-first">
                             <h3>High quality code</h3>
                             <br/>
                             <p>Our professionals are following industry standards and
                                 having many years expertise in software development.
                             </p>
                         </div>
-                        <div className="col-md-4 col-lg-3 offset-lg-2 benefits-tablet benefits-second">
+                        <div className="col-md-4 col-lg-3 offset-lg-1 benefits-tablet benefits-second">
                             <h3>Business analysis</h3>
                             <br/>
                             <p>Understanding of a business side is crucial for software development.
@@ -67,14 +75,13 @@ class OurBenefits extends Component {
                                 to make final product matching expectations.
                             </p>
                         </div>
-                        <div className="col-md-4 col-lg-2 offset-lg-1 benefits-tablet benefits-third">
+                        <div className="col-md-4 col-lg-3 offset-lg-1 benefits-tablet benefits-third">
                             <h3>Dedicated team</h3>
                             <br/>
                             <p>Build your own flexible remote development team
                                 involving best engineers
                             </p>
                         </div>
-                    </div>
                 </div>
             </div>
         )
