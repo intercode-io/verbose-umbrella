@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import './QuestionSection.scss'
+import MyForm from "../../../components/InputComponent/InputComponent";
 
 class QuestionSection extends Component {
 
@@ -7,6 +8,7 @@ class QuestionSection extends Component {
 
         return (
             <div className="container section-dimensions question-section test">
+                {/*<MyForm/>*/}
                 <div className="row test">
                     <div className="col-sm-12">
                         <h3 className="section-header questions-header">Have any questions?</h3>
