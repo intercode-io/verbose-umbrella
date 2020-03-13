@@ -65,6 +65,11 @@
         margin-top: 480px;
     }
 
+    .our-benefits-span {
+        top: 112px;
+        left: 25%;
+    }
+
     @media (min-width: 360px) {
 
     }
@@ -82,6 +87,11 @@
             display: block;
         }
 
+        .our-benefits-span {
+            top: 98px;
+            left: 22%;
+        }
+
     }
 
     @media (min-width: 991px) {
@@ -97,6 +107,9 @@
             margin-top: 0
         }
 
+        .our-benefits-span {
+            left: 28%;
+        }
     }
 
 }

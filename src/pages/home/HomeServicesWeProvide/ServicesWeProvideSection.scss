@@ -12,7 +12,7 @@
 }
 
 .services-list-row {
-    margin-left: 30px;
+    margin-left: 20px;
 }
 
 .mobile-dev-row-tablet {
@@ -40,6 +40,8 @@
 .service-title {
     font-family: Montserrat, serif;
     height: 20px;
+    font-weight: bold;
+    font-size: 19px;
 }
 
 .services-description {
@@ -55,9 +57,10 @@
 }
 
 .swp-shadow-span {
-    font-size: 60px;
-    top: 95px;
-    left: 23%;
+
+    top: 112px;
+    left: 5%;
+
 }
 
 @media (min-width: 360px) {
@@ -79,6 +82,11 @@
 
     .mobile-circle{
         display: none;
+    }
+
+    .swp-shadow-span {
+        top: 98px;
+        left: 2%;
     }
 
 }
@@ -109,5 +117,9 @@
 
     .two-row-title-text {
         margin-top: 35px;
+    }
+
+    .swp-shadow-span {
+        left: 14%;
     }
 }

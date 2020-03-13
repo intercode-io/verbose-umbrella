@@ -43,6 +43,8 @@ li {
     position: absolute;
     z-index: 1;
     opacity: 10%;
+    font-size: 30px;
+    filter: blur(2px);
 }
 
 .text {
@@ -68,7 +70,7 @@ li {
 .section-header-text {
     //color: $white;
     color: #000000;
-    font-size: 48px;
+    font-size: 28px;
     font-family: HelveticaNeueCyr, serif;
     font-weight: normal;
 }
@@ -104,6 +106,13 @@ li {
         font-size: 64px;
     }
 
+    .section-header-text {
+        font-size: 48px;
+    }
+
+    .shadow-span {
+        font-size: 64px;
+    }
 }
 
 @media (min-width: 992px) {
