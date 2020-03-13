@@ -14,7 +14,8 @@ class FooterComponent extends Component {
                             </div>
                             <div className="col-4 footer-menu">
                                 <ul className="footer-menu-list">
-                                    <li className="footer-menu-item">Cases</li>
+                                    <li className="footer-menu-item">
+                                        <a className="href-text" href="#cases-section">Cases</a></li>
                                     <li className="footer-menu-item-2">Company</li>
                                 </ul>
                             </div>

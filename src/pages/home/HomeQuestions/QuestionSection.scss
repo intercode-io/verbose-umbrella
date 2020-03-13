@@ -37,6 +37,19 @@
         margin-left: 20px;
     }
 
+    .text-field {
+        margin-bottom: 50px;
+    }
+
+    .msg-text {
+        margin-bottom: 30px;
+        font-size: 24px;
+    }
+
+    .questions-header {
+        margin-bottom: 20px;
+    }
+
     @media (min-width: 360px) {
 
     }
@@ -52,6 +65,10 @@
 
         .benefits-tablet {
             display: block;
+        }
+
+        .message-us-part {
+            margin-top: 30px;
         }
 
     }

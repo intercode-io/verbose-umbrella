@@ -34,7 +34,7 @@ class Cases extends Component {
     render() {
 
         return (
-            <div className="container-fluid">
+            <div className="container-fluid" id="cases-section">
                 <div className="row section-dimensions  cases-section">
                     <div className="container cases-section-inside section-dimensions">
                         <div className="row">

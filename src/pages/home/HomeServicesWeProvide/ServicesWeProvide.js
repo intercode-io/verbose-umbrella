@@ -4,7 +4,7 @@ import './ServicesWeProvideSection.scss'
 class ServicesWeProvide extends Component {
     render() {
         return (
-            <div className="container">
+            <div className="container" id="swp-section">
                 <div className="swp-row section-dimensions">
                     <div className="container-fluid">
                         <div className="row">

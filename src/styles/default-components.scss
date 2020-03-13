@@ -8,3 +8,7 @@
 .swiper-pagination-bullet-active {
     background-color: $blue !important;
 }
+
+html {
+    scroll-behavior: smooth;
+}

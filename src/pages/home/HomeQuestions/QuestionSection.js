@@ -1,13 +1,20 @@
 import React, {Component} from "react";
 import './QuestionSection.scss'
+import {Field, Form} from "react-final-form";
+import TextFieldControl from "../../../components/TextFieldControl";
+import InputAdornment from "@material-ui/core/InputAdornment";
+import FormValidators from "../../../helpers/form-validators";
 
 class QuestionSection extends Component {
+
+    onSubmit = async values => {
+        window.alert(JSON.stringify(values, 0, 2))
+    };
 
     render() {
 
         return (
             <div className="container section-dimensions question-section test">
-                {/*<MyForm/>*/}
                 <div className="row test">
                     <div className="col-sm-12">
                         <h3 className="section-header questions-header">Have any questions?</h3>
@@ -24,47 +31,73 @@ class QuestionSection extends Component {
                     <div className="col-6 offset-1">
                         <h4 className="text msg-text">Message us</h4>
                     </div>
-                    <form className="col-10 offset-1 text-input-form">
-                        <input type="text"
-                               name="name"
-                               placeholder="Name"
-                               className="input-form"
-                            // value={this.state.formControls.name.value}
-                            // onChange={this.changeHandler}
-                        />
 
-                        <input type="email"
-                               name="email"
-                               placeholder="Email"
-                               className="input-form"
-                            // value={this.state.formControls.email.value}
-                            // onChange={this.changeHandler}
-                        />
+                    <Form
+                        onSubmit={this.onSubmit}
+                        render={({handleSubmit, form, submitting, pristine, values}) => (
+                            <form onSubmit={handleSubmit}>
+                                <div className="row">
+                                    <div className="col-8 offset-2 offset-lg-0">
+                                        <Field
+                                            className="text-field"
+                                            name="name"
+                                            component={TextFieldControl}
+                                            type={"text"}
+                                            placeholder="Full Name"
+                                            validate={FormValidators.composeValidators(
+                                                FormValidators.required("This field is required"))}
+                                        />
 
-                        <textarea name="name"
-                                  placeholder="Message"
-                                  className="input-form"
-                            // value={this.state.formControls.name.value}
-                            // onChange={this.changeHandler}
-                        />
+                                        <Field
+                                            className="text-field"
+                                            name="email"
+                                            component={TextFieldControl}
+                                            type={"text"}
+                                            placeholder="Email"
+                                            validate={FormValidators.composeValidators(
+                                                FormValidators.required(),
+                                                // FormValidators.isEmail("Please input a valid e-mail")
+                                            )}
+                                        />
 
-                        <div className="button-container">
-                            <button className="send-btn send-btn-margins button-text">SEND</button>
-                        </div>
-                    </form>
+                                        <Field
+                                            className="text-field"
+                                            name="message"
+                                            component={TextFieldControl}
+                                            type={"text"}
+                                            placeholder="Message"
+                                            validate={FormValidators.composeValidators(
+                                                FormValidators.required("This field is required"))}
+                                        />
+                                    </div>
+
+                                </div>
+
+                                <div className="button-container">
+                                    <button
+                                        className="send-btn send-btn-margins button-text"
+                                        disabled={submitting}>
+                                        SEND
+                                    </button>
+
+                                </div>
+                            </form>
+                        )}
+                    />
+
                 </div>
                 <div className="row contact-form">
-                    <div className="col-12">
+                    <div className="col-12 col-md-4">
                         <p className="contact-title">Our phone</p>
                         <p className="text1">+380000000000</p>
                     </div>
-                    <div className="col-12">
+                    <div className="col-12 col-md-4">
                         <p className="contact-title">Our email</p>
                         <p className="text1">potrpots@gmail.com</p>
                     </div>
-                    <div className="col-12">
+                    <div className="col-12 col-md-4">
                         <p className="contact-title">Our office</p>
-                        <p className="text1">United Kingdom  99 Staple <br/> Hill Road, Bristol, BS16 5AD</p>
+                        <p className="text1">United Kingdom 99 Staple <br/> Hill Road, Bristol, BS16 5AD</p>
                     </div>
                 </div>
             </div>
