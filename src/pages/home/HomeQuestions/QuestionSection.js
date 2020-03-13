@@ -28,78 +28,83 @@ class QuestionSection extends Component {
                     </div>
                 </div>
                 <div className="row message-us-part">
-                    <div className="col-6 offset-1">
-                        <h4 className="text msg-text">Message us</h4>
-                    </div>
+                    <div className="col-12 col-lg-8">
+                        <div className="col-6 offset-1">
+                            <h4 className="text msg-text">Message us</h4>
+                        </div>
 
-                    <Form
-                        onSubmit={this.onSubmit}
-                        render={({handleSubmit, form, submitting, pristine, values}) => (
-                            <form onSubmit={handleSubmit}>
-                                <div className="row">
-                                    <div className="col-8 offset-2 offset-lg-0">
-                                        <Field
-                                            className="text-field"
-                                            name="name"
-                                            component={TextFieldControl}
-                                            type={"text"}
-                                            placeholder="Full Name"
-                                            validate={FormValidators.composeValidators(
-                                                FormValidators.required("This field is required"))}
-                                        />
+                        <Form
+                            onSubmit={this.onSubmit}
+                            render={({handleSubmit, form, submitting, pristine, values}) => (
+                                <form onSubmit={handleSubmit}>
+                                    <div className="row">
+                                        <div className="col-8 offset-2 offset-lg-0">
+                                            <Field
+                                                className="text-field"
+                                                name="name"
+                                                component={TextFieldControl}
+                                                type={"text"}
+                                                placeholder="Full Name"
+                                                validate={FormValidators.composeValidators(
+                                                    FormValidators.required("This field is required"))}
+                                            />
 
-                                        <Field
-                                            className="text-field"
-                                            name="email"
-                                            component={TextFieldControl}
-                                            type={"text"}
-                                            placeholder="Email"
-                                            validate={FormValidators.composeValidators(
-                                                FormValidators.required(),
-                                                // FormValidators.isEmail("Please input a valid e-mail")
-                                            )}
-                                        />
+                                            <Field
+                                                className="text-field"
+                                                name="email"
+                                                component={TextFieldControl}
+                                                type={"text"}
+                                                placeholder="Email"
+                                                validate={FormValidators.composeValidators(
+                                                    FormValidators.required(),
+                                                    // FormValidators.isEmail("Please input a valid e-mail")
+                                                )}
+                                            />
 
-                                        <Field
-                                            className="text-field"
-                                            name="message"
-                                            component={TextFieldControl}
-                                            type={"text"}
-                                            placeholder="Message"
-                                            validate={FormValidators.composeValidators(
-                                                FormValidators.required("This field is required"))}
-                                        />
+                                            <Field
+                                                className="text-field"
+                                                name="message"
+                                                component={TextFieldControl}
+                                                type={"text"}
+                                                placeholder="Message"
+                                                validate={FormValidators.composeValidators(
+                                                    FormValidators.required("This field is required"))}
+                                            />
+                                        </div>
+
                                     </div>
 
-                                </div>
+                                    <div className="button-container">
+                                        <button
+                                            className="send-btn send-btn-margins button-text"
+                                            disabled={submitting}>
+                                            SEND
+                                        </button>
 
-                                <div className="button-container">
-                                    <button
-                                        className="send-btn send-btn-margins button-text"
-                                        disabled={submitting}>
-                                        SEND
-                                    </button>
+                                    </div>
+                                </form>
+                            )}
+                        />
+                    </div>
 
-                                </div>
-                            </form>
-                        )}
-                    />
-
+                    <div className="col-12 col-lg-4">
+                        <div className="row contact-form">
+                            <div className="col-12 col-md-4 col-lg-12">
+                                <p className="contact-title">Our phone</p>
+                                <p className="text1">+380000000000</p>
+                            </div>
+                            <div className="col-12 col-md-4 col-lg-12">
+                                <p className="contact-title">Our email</p>
+                                <p className="text1">potrpots@gmail.com</p>
+                            </div>
+                            <div className="col-12 col-md-4 col-lg-12">
+                                <p className="contact-title">Our office</p>
+                                <p className="text1">United Kingdom 99 Staple <br/> Hill Road, Bristol, BS16 5AD</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div className="row contact-form">
-                    <div className="col-12 col-md-4">
-                        <p className="contact-title">Our phone</p>
-                        <p className="text1">+380000000000</p>
-                    </div>
-                    <div className="col-12 col-md-4">
-                        <p className="contact-title">Our email</p>
-                        <p className="text1">potrpots@gmail.com</p>
-                    </div>
-                    <div className="col-12 col-md-4">
-                        <p className="contact-title">Our office</p>
-                        <p className="text1">United Kingdom 99 Staple <br/> Hill Road, Bristol, BS16 5AD</p>
-                    </div>
-                </div>
+
             </div>
         )
     }
