@@ -1,7 +1,6 @@
 import React, {Component} from "react";
 import './OurBenefitsSection.scss'
 import Swiper from "react-id-swiper";
-import Image from "react-bootstrap/Image";
 
 class OurBenefits extends Component {
 
