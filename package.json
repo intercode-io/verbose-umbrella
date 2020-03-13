@@ -16,6 +16,7 @@
         "react-dom": "^16.13.0",
         "react-final-form": "^6.3.5",
         "react-id-swiper": "^3.0.0",
+        "react-router-dom": "^5.1.2",
         "react-scripts": "3.4.0",
         "react-slider-swiper": "^2.0.6",
         "reactstrap": "^8.4.1",
