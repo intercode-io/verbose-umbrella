@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import './FooterComponent.scss'
-import NavbarBrand from "react-bootstrap/NavbarBrand";
 
 class FooterComponent extends Component {
     render() {

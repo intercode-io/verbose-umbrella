@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import './QuestionSection.scss'
-import MyForm from "../../../components/InputComponent/InputComponent";
 
 class QuestionSection extends Component {
 
