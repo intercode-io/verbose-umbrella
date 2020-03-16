@@ -1,0 +1,134 @@
+.footer-container {
+    position: relative;
+}
+
+.footer-container::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 0; left: 0;
+    width: 100%;
+    background: radial-gradient(111% 111% at 74.29% -11%, #A93300 0%, #005570 100%), linear-gradient(127.43deg, #00D5C8 0%, #2200AA 100%);
+    background-blend-mode: difference, normal;
+    filter: brightness(0.3);
+}
+
+.footer-container-inside {
+    padding-top: 25px;
+    background-color: transparent;
+    position: relative;
+}
+
+.footer-dimensions {
+    height: 238px;
+}
+
+.footer-dimensions::before {
+    height: 238px;
+}
+
+.footer-logo-mobile-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+    margin-bottom: 30px;
+}
+
+.footer-logo-tablet-container {
+    display: none;
+}
+
+.footer-menu-list {
+    list-style-type: none;
+}
+
+.footer-menu-item {
+    margin-bottom: 20px;
+}
+
+.footer-social-media {
+    display: flex;
+    place-self: center;
+}
+
+.facebook-icon {
+    margin-left: 22px;
+}
+
+@media (min-width: 768px) {
+
+    .footer-dimensions {
+        height: 140px;
+    }
+
+    .footer-dimensions::before {
+        height: 140px;
+    }
+
+    .footer-row {
+        height: 70%;
+        align-items: center;
+    }
+
+    .footer-menu-list {
+        display: flex;
+        //place-content: space-between;
+        margin-bottom: 0;
+        padding-left: 0;
+    }
+
+    .footer-logo-tablet-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-logo-mobile-container {
+        display: none;
+    }
+
+
+    .footer-social-media {
+        place-self: center;
+        margin-bottom: 0;
+        justify-content: flex-end;
+    }
+
+    .icon-style {
+        align-self: center;
+    }
+
+    .footer-menu-item {
+        margin-right: 60px;
+        margin-bottom: 0;
+    }
+
+}
+
+
+@media (min-width: 992px) {
+
+    .footer-dimensions {
+        height: 140px;
+    }
+
+    .footer-dimensions::before {
+        height: 140px;
+    }
+
+    .footer-logo-tablet-container {
+        display: none;
+    }
+
+    .footer-logo-mobile-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-menu-list {
+        justify-content: center;
+    }
+
+    .footer-logo-mobile-container {
+        justify-content: flex-start;
+    }
+}

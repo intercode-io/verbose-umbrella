@@ -1,71 +1,13 @@
 .section-dimensions {
     height: 100vh;
-    min-height: 610px;
-    max-height: 700px;
 }
 
 .section-dimensions::before {
     height: 100vh;
-    min-height: 610px;
-    max-height: 700px;
 }
 
 .section-header {
     text-align: center;
     margin-top: 130px;
     margin-bottom: 60px;
-}
-
-@media (min-width: 480px) {
-
-}
-
-@media (min-width: 720px) {
-    .section-dimensions {
-        min-height: 768px;
-    }
-
-    .section-dimensions {
-        min-height: 750px;
-        max-height: 1000px;
-    }
-
-    .section-dimensions::before {
-        min-height: 750px;
-        max-height: 1000px;
-    }
-}
-
-@media (min-width: 991px) {
-    .section-dimensions {
-        min-height: 750px;
-        max-height: 1100px;
-    }
-
-    .section-dimensions::before {
-        min-height: 750px;
-        max-height: 1100px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .section-dimensions {
-        min-height: 850px;
-        max-height: 1000px;
-    }
-
-    .section-dimensions::before {
-        min-height: 850px;
-        max-height: 1000px;
-    }
-}
-
-@media (min-width: 1500px) {
-    .section-dimensions {
-        min-height: 1000px;
-    }
-
-    .section-dimensions::before {
-        min-height: 1000px;
-    }
 }

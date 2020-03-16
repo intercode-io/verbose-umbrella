@@ -14,8 +14,17 @@ h2 {
 
 h3 {
     font-family: Montserrat, serif;
-    font-weight: bold;
     font-size: 24px;
+}
+
+h4 {
+    font-family: Montserrat, serif;
+    font-size: 20px;
+}
+
+h4 {
+    font-family: Montserrat, serif;
+    font-size: 18px;
 }
 
 
@@ -34,11 +43,19 @@ li {
     position: absolute;
     z-index: 1;
     opacity: 10%;
+    font-size: 30px;
+    filter: blur(2px);
 }
 
 .text {
     font-family: Montserrat, serif;
     height: 20px;
+}
+
+.info-text {
+    font-family: Montserrat, serif;
+    height: 16px;
+    font-weight: normal;
 }
 
 .button-text {
@@ -53,11 +70,34 @@ li {
 .section-header-text {
     //color: $white;
     color: #000000;
-    font-size: 48px;
+    font-size: 28px;
     font-family: HelveticaNeueCyr, serif;
     font-weight: normal;
 }
 
+.contact-title {
+    font-family: Montserrat, serif;
+    font-size: 29px;
+    color: #48484848;
+    font-weight: normal;
+}
+
+.text1 {
+    color: black;
+    font-family: Montserrat, serif;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: normal;
+}
+
+.href-text {
+    color: $white;
+}
+
+.href-text:hover {
+    color: $white;
+    text-decoration: none;
+}
 
 @media (min-width: 360px) {
     h1 {
@@ -69,20 +109,24 @@ li {
     }
 }
 
-@media (min-width: 576px) {
-
-}
-
 @media (min-width: 768px) {
     h1 {
         font-size: 64px;
     }
 
+    .section-header-text {
+        font-size: 48px;
+    }
+
+    .shadow-span {
+        font-size: 64px;
+    }
 }
 
 @media (min-width: 992px) {
     h1 {
-        font-size: 72px;
+        //font-size: 72px;
+        font-size: 59px;
     }
 
     h2 {
@@ -94,8 +138,4 @@ li {
         font-size: 24px;
         margin-bottom: 20px;
     }
-}
-
-@media (min-width: 1200px) {
-
 }

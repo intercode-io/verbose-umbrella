@@ -1,7 +1,8 @@
 import React, {Component} from "react";
-import Header from "../../../components/HeaderComponent";
+import Header from "../../../components/HeaderComponent/HeaderComponent";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import './NeuronsSection.scss'
+import Button from "react-bootstrap/Button";
 
 class Neurons extends Component {
     render() {
@@ -36,7 +37,8 @@ class Neurons extends Component {
                                                 <img className="decor-explore"
                                                      src="../assets/decorations/lines/explore-line.png"
                                                      alt=""/>
-                                                <button className="btn-big button-text">EXPLORE</button>
+                                                <Button className="btn-big button-text" type="submit"
+                                                href="#swp-section">EXPLORE</Button>
                                             </div>
                                         </div>
                                     </div>

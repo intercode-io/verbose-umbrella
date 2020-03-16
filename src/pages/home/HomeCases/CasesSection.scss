@@ -1,9 +1,5 @@
 //@import "././/colors.scss";
 
-.cases-section {
-    position: relative;
-}
-
 .cases-section::before {
     content: "";
     position: absolute;
@@ -15,109 +11,105 @@
     filter: brightness(0.2);
 }
 
-.cases-section-inside {
-    /* This will make it stack on top of the ::before */
-    padding-top: 25px;
-    background-color: transparent;
+.cases-section {
     position: relative;
-}
 
-.cases-header {
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 35px;
-}
-
-.cases-header-text{
-    color: #FFFFFF;
-}
-
-
-.neurons-overlay {
-    position: relative;
-}
-
-.top-text-row {
-    justify-content: center;
-}
-
-.cases-shadow-span {
-    font-family: HelveticaNeueCyr, serif;
-    position: absolute;
-    z-index: 0;
-    font-size: 40px;
-    filter: blur(2px);
-    opacity: 10%;
-    top: -17px;
-    left: 31%;
-}
-
-
-.cases-view-more {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 20px;
-    margin-right: 20px;
-}
-
-.cases-view-more-text {
-    font-size: 14px;
-    font-weight: normal;
-}
-
-.desktop-swiper {
-    display: none;
-}
-
-.carousel-image {
-    flex: 1;
-    resizeMode: stretch;
-    width: 100%
-}
-
-.cases-image-title {
-    font-size: 29px;
-}
-
-@media (min-width: 576px) {
-}
-
-@media (min-width: 768px) {
-    .cases-shadow-span {
-        position: absolute;
-        z-index: 1;
-        font-size: 64px;
-        top: -25px;
-        left: 36%;
+    .cases-section-inside {
+        /* This will make it stack on top of the ::before */
+        padding-top: 25px;
+        background-color: transparent;
+        position: relative;
     }
-}
-
-@media (min-width: 850px) {
-
-}
-
-@media (min-width: 992px) {
 
     .cases-header {
-        text-align: left;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 35px;
+    }
+
+    .cases-header-text {
+        color: #FFFFFF;
+    }
+
+
+    .neurons-overlay {
+        position: relative;
+    }
+
+    .top-text-row {
+        justify-content: center;
     }
 
     .cases-shadow-span {
-        font-size: 50pt;
+        font-family: HelveticaNeueCyr, serif;
+        position: absolute;
+        z-index: 0;
+        font-size: 30px;
         filter: blur(2px);
-        top: -15px;
-        left: 10px;
+        opacity: 10%;
+        top: -16px;
+        left: 38%;
     }
 
-    .mobile-tablet-swiper {
-        display: none;
+
+    .cases-view-more {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+
+    .cases-view-more-text {
+        font-size: 14px;
+        font-weight: normal;
     }
 
     .desktop-swiper {
-        display: flex;
+        display: none;
     }
-}
 
-@media (min-width: 1200px) {
+    .carousel-image {
+        flex: 1;
+        resizeMode: stretch;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .cases-image-title {
+        font-size: 29px;
+    }
+
+
+    @media (min-width: 768px) {
+        .cases-shadow-span {
+            position: absolute;
+            z-index: 1;
+            font-size: 64px;
+            top: -25px;
+            left: 36%;
+        }
+    }
+
+    @media (min-width: 992px) {
+
+        .cases-header {
+            text-align: left;
+        }
+
+        .cases-shadow-span {
+            font-size: 50pt;
+            filter: blur(2px);
+            top: -15px;
+            left: 10px;
+        }
+
+        .mobile-tablet-swiper {
+            display: none;
+        }
+
+        .desktop-swiper {
+            display: flex;
+        }
+    }
 
 }

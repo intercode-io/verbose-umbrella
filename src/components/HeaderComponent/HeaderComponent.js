@@ -16,8 +16,10 @@ class Header extends Component {
 
                     <NavbarBrand className="desktop-menu">
                         <ul className="desktop-menu-list">
-                            <li className="desktop-menu-item">Cases</li>
-                            <li className="desktop-menu-item-2">Company</li>
+                            <li className="desktop-menu-item">
+                                <a className="href-text" href="#cases-section">Cases</a></li>
+                            <li className="desktop-menu-item-2">
+                                <a className="href-text" href="">Company</a></li>
                         </ul>
                     </NavbarBrand>
 
