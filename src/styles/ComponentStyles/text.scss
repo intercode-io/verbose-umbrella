@@ -2,12 +2,10 @@
 
 h1 {
     color: #FFFFFF;
-    font-family: HelveticaNeueCyr, cursive;
     font-weight: bold;
 }
 
 h2 {
-    font-family: HelveticaNeueCyr, serif;
     font-weight: bold;
     font-size: 42px;
 }
@@ -31,8 +29,7 @@ h4 {
 p {
     font-size: 14px;
     font-family: Montserrat, serif;
-    font-weight: bold;
-    font-color: #FFFFFF;
+    font-weight: 400;
 }
 
 li {
@@ -71,8 +68,7 @@ li {
     //color: $white;
     color: #000000;
     font-size: 28px;
-    font-family: HelveticaNeueCyr, serif;
-    font-weight: normal;
+    font-weight: bold;
 }
 
 .contact-title {

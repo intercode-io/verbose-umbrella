@@ -49,6 +49,10 @@
 .footer-social-media {
     display: flex;
     place-self: center;
+
+    :nth-child(2) {
+        margin-left: 22px;
+    }
 }
 
 .facebook-icon {

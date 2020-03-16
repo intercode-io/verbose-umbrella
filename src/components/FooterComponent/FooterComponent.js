@@ -1,15 +1,25 @@
 import React, {Component} from 'react';
 import './FooterComponent.scss'
+import {ReactSVG} from "react-svg";
+
+import assetsLogo from '../../assets/images/svg/InterCode_logo.svg'
+import assetsFacebook from '../../assets/images/svg/social-media/facebook.svg'
+import assetsInstagram from '../../assets/images/svg/social-media/instagram.svg'
 
 class FooterComponent extends Component {
     render() {
         return (
-            <div className="footer-container footer-dimensions">
+            <div className="footer-container footer-dimensions" style={{
+                position: "absolute",
+                bottom: 0,
+                left: 0,
+                width: document.documentElement.clientWidth,
+            }}>
                 <div className="container footer-container-inside">
                     <div className="row footer-row">
                         <div className="col-12 col-lg-4 footer-logo-mobile-container">
-                            <img src="../assets/InterCode_Header.png" height="30" width="115"
-                                 alt="InterCode"/>
+                            <ReactSVG
+                                src={assetsLogo} />
                         </div>
                         <div className="col-4 footer-menu">
                             <ul className="footer-menu-list">
@@ -20,19 +30,15 @@ class FooterComponent extends Component {
                         </div>
 
                         <div className="col-md-4 footer-logo-tablet-container">
-                            <img src="../assets/InterCode_Header.png" height="30" width="115"
-                                 alt="InterCode"/>
+                            <ReactSVG
+                                src={assetsLogo} />
                         </div>
 
                         <div className="col-4 offset-4 offset-md-0 footer-social-media">
-                            <img src="../assets/images/social-media/instagram.png"
-                                 height="24" width="24"
-                                 className="instagram-icon icon-style"
-                                 alt="InterCode"/>
-                            <img src="../assets/images/social-media/facebook.png"
-                                 height="24" width="24"
-                                 className="facebook-icon icon-style"
-                                 alt="InterCode"/>
+                            <ReactSVG
+                                src={assetsInstagram}/>
+                            <ReactSVG
+                                src={assetsFacebook}/>
                         </div>
                     </div>
                 </div>

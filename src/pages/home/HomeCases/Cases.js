@@ -1,8 +1,13 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 import Swiper from 'react-id-swiper';
 import Image from "react-bootstrap/Image";
 import PhotoSliderDesktop from "./PhotoSliderDesktop";
 import './CasesSection.scss'
+
+import assetsDesktopRespage from '../../../assets/images/png/carousel/desktop/Respage.png';
+import assetsDesktopPepTalkHer from '../../../assets/images/png/carousel/desktop/PepTalkHer.png';
+import assetsMobileRespage from '../../../assets/images/png/carousel/mobile/respage.png';
+import assetsMobilePepTalkHer from '../../../assets/images/png/carousel/mobile/PepTalkHer.png';
 
 class Cases extends Component {
 
@@ -10,8 +15,8 @@ class Cases extends Component {
         super(props);
 
         const imagesarray = [
-            {id: 1, title: 'Respage', src: "assets/images/desktop/Respage.png"},
-            {id: 2, title: 'PepTalkHer', src: "/assets/images/desktop/PepTalkHer.png"}
+            { id: 1, title: 'Respage', src: assetsDesktopRespage },
+            { id: 2, title: 'PepTalkHer', src: assetsDesktopPepTalkHer }
         ];
 
         const swiperParams = {
@@ -32,7 +37,6 @@ class Cases extends Component {
     }
 
     render() {
-
         return (
             <div className="container-fluid" id="cases-section">
                 <div className="row section-dimensions  cases-section">
@@ -47,18 +51,18 @@ class Cases extends Component {
                             <Swiper {...this.state.swiperParams}>
                                 <div>
                                     <Image className="carousel-image"
-                                           src="../assets/images/mobile/Carousel/1.png"
-                                           alt=""/>
+                                        src={assetsMobileRespage}
+                                        alt="" />
                                 </div>
                                 <div>
                                     <Image className="carousel-image"
-                                           src="../assets/images/mobile/Carousel/2.png"
-                                           alt=""/>
+                                        src={assetsMobilePepTalkHer}
+                                        alt="" />
                                 </div>
                             </Swiper>
                         </div>
                         <div className="row desktop-swiper">
-                            <PhotoSliderDesktop images={this.state.images}/>
+                            <PhotoSliderDesktop images={this.state.images} />
                         </div>
                         <div className="row cases-view-more">
                             <h1 className="cases-view-more-text">VIEW MORE</h1>

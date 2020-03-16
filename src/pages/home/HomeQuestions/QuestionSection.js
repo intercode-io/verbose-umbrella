@@ -6,6 +6,7 @@ import { Field, Form } from "react-final-form";
 import TextFieldControl from "../../../components/TextFieldControl";
 import FormValidators from "../../../helpers/form-validators";
 import EmailService from "../../../services/EmailService";
+import FooterComponent from "../../../components/FooterComponent/FooterComponent";
 
 const Alert = props => {
     return <MuiAlert elevation={6} variant="filled" {...props} />;
@@ -160,7 +161,7 @@ const QuestionSection = () => {
                         </div>
                     </div>
                 </div>
-
+                <FooterComponent />
             </div>
         </div >
     );

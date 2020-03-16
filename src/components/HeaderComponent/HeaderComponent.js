@@ -1,7 +1,11 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react';
 import Navbar from "react-bootstrap/Navbar";
 import NavbarBrand from "react-bootstrap/NavbarBrand";
 import './HeaderSection.scss'
+import assetsMobileMenu from '../../assets/decorations/mobile/menu.svg'
+import assetsLogo from '../../assets/images/svg/InterCode_logo.svg'
+import {ReactSVG} from "react-svg";
 
 class Header extends Component {
     render() {
@@ -10,22 +14,42 @@ class Header extends Component {
                 <div className="brand-container container">
 
                     <NavbarBrand className="top-menu-mobile">
-                        <img src="../assets/images/mobile/menu.png"
-                            alt="Menu" />
+                        <ReactSVG src={assetsMobileMenu}/>
                     </NavbarBrand>
 
                     <NavbarBrand className="desktop-menu">
                         <ul className="desktop-menu-list">
                             <li className="desktop-menu-item">
-                                <a className="href-text" href="#cases-section">Cases</a></li>
+                                <a
+                                    className="href-text"
+                                    onClick={() => {
+                                        if (this.props.swiper) {
+                                            this.props.swiper.slideNext();
+                                            this.props.swiper.slideNext();
+                                        }
+                                    }}
+                                >
+                                    {"Cases"}
+                                </a>
+                            </li>
                             <li className="desktop-menu-item-2">
-                                <a className="href-text" href="#cases-section">Company</a></li>
+                                <a
+                                    className="href-text"
+                                    onClick={() => {
+                                        if (this.props.swiper) {
+                                            this.props.swiper.slideNext();
+                                            this.props.swiper.slideNext();
+                                        }
+                                    }}
+                                >
+                                    {"Company"}
+                                </a>
+                            </li>
                         </ul>
                     </NavbarBrand>
 
                     <NavbarBrand href="/" className="logo">
-                        <img src="../assets/InterCode_Header.png" height="30" width="115"
-                            alt="InterCode" />
+                        <ReactSVG src={assetsLogo} />
                     </NavbarBrand>
                 </div>
             </Navbar>
