@@ -3,6 +3,9 @@ import Header from "../../../components/HeaderComponent/HeaderComponent";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import './NeuronsSection.scss'
 import Button from "react-bootstrap/Button";
+import {ReactSVG} from 'react-svg';
+import assetsNeuronsImage from '../../../assets/images/svg/brain_image.svg';
+import assetsDecorLine from '../../../assets/decorations/lines/explore-line.svg';
 
 class Neurons extends Component {
     render() {
@@ -20,9 +23,11 @@ class Neurons extends Component {
                                     <div className="col-sm-12 col-lg-7">
                                         <div className="row">
                                             <div className="col-sm-12 neurons-image-container">
-                                                <img className="neurons-image"
-                                                     src="../assets/images/brain_image.png"
-                                                     alt=""/>
+                                                <ReactSVG
+                                                    beforeInjection={svg => {
+                                                        svg.classList.add('neurons-image')
+                                                    }}
+                                                    src={assetsNeuronsImage}/>
                                             </div>
                                         </div>
                                     </div>
@@ -35,7 +40,7 @@ class Neurons extends Component {
 
                                             <div className="button-container col-sm-12 col-md-4 col-lg-auto">
                                                 <img className="decor-explore"
-                                                     src="../assets/decorations/lines/explore-line.png"
+                                                     src={assetsDecorLine}
                                                      alt=""/>
                                                 <Button className="btn-big button-text" type="submit"
                                                 href="#swp-section">EXPLORE</Button>

@@ -2,7 +2,6 @@ import React, {Component} from "react";
 import './QuestionSection.scss'
 import {Field, Form} from "react-final-form";
 import TextFieldControl from "../../../components/TextFieldControl";
-import InputAdornment from "@material-ui/core/InputAdornment";
 import FormValidators from "../../../helpers/form-validators";
 
 class QuestionSection extends Component {

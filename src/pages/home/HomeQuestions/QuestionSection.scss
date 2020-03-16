@@ -8,7 +8,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("./questions_bkg_mobile_old.png");
+    background-image: url("../../../assets/images/svg/questions-images/questions_bkg_mobile.svg");
     filter: opacity(0.1);
     object-fit: fill;
     background-size: cover;
@@ -18,13 +18,13 @@
 
 @media (min-width: 720px) {
     .question-section::before {
-        background-image: url("./questions_bkg_tablet.png");
+        background-image: url("../../../assets/images/svg/questions-images/questions_bkg_tablet.svg");
     }
 }
 
 @media (min-width: 992px) {
     .question-section::before {
-        background-image: url("./questions_bkg_desktop.png");
+        background-image: url("../../../assets/images/svg/questions-images/questions_bkg_desktop.svg");
     }
 }
 
