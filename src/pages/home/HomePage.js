@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 import Neurons from "./HomeNeurons/Neurons";
 import './HomePage.scss'
 import ServicesWeProvide from "./HomeServicesWeProvide/ServicesWeProvide";
