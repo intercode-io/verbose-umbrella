@@ -28,7 +28,8 @@ class OurBenefits extends Component {
             <div className="container section-dimensions benefits-section">
                     <div className="row">
                         <div className="col-sm-12">
-                            <h2 className="section-header">Our benefits</h2>
+                            <h2 className="section-header section-header-text">Our benefits
+                            <span className="our-benefits-span shadow-span">Our benefits</span></h2>
                         </div>
                     </div>
                     <div className="row benefits-row">

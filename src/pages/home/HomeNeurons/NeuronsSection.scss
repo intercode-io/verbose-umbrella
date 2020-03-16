@@ -1,5 +1,4 @@
 .neurons-section {
-    margin-bottom: 30px;
 }
 
 .neurons-section::before {
@@ -52,9 +51,6 @@
     display: none;
 }
 
-@media (min-width: 576px) {
-
-}
 
 @media (min-width: 768px) {
 
@@ -82,10 +78,6 @@
     }
 }
 
-@media (min-width: 850px) {
-
-}
-
 @media (min-width: 992px) {
     .neurons-text-and-button-row {
         flex-direction: column;
@@ -105,8 +97,4 @@
         margin-right: 40px;
         margin-left: 40px;
     }
-}
-
-@media (min-width: 1200px) {
-
 }

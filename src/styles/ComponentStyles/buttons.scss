@@ -1,7 +1,8 @@
 @import "../../styles/colors.scss";
 
 .btn-big {
-    background-color: $yellow;
+    background-color: $yellow !important;
+    color: black !important;
     width: 280px;
     height: 50px;
     outline: 0;
@@ -14,14 +15,6 @@
     outline: 0;
 }
 
-
-@media (min-width: 360px) {
-
-}
-
-@media (min-width: 576px) {
-
-}
 
 @media (min-width: 768px) {
     .btn-big {
@@ -45,9 +38,4 @@
         width: 270px;
         height: 65px;
     }
-}
-
-
-@media (min-width: 1200px) {
-
 }
