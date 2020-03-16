@@ -1,4 +1,7 @@
 .benefits-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     .swiper-slide .swiper-slide-duplicate .swiper-slide-duplicate-prev {
         margin-top: 80px;
     }
@@ -33,6 +36,9 @@
         font-weight: bold;
         align-items: center;
         margin-bottom: 25px;
+        p {
+            font-weight: 400;
+        }
     }
 
     .benefits-title {
@@ -89,7 +95,7 @@
 
     @media (min-width: 991px) {
         .benefits-row {
-            align-items: center;
+            align-items: baseline;
             margin-top: 100px;
         }
         .benefits-second {

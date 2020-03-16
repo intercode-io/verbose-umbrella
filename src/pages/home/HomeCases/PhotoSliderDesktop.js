@@ -3,16 +3,14 @@ import CardImg from "reactstrap/es/CardImg";
 import CardTitle from "reactstrap/es/CardTitle";
 import Card from "reactstrap/es/Card";
 import CardBody from "reactstrap/es/CardBody";
-import Image from "react-bootstrap/Image";
 
-
-const PhotoSliderDesktop = ({images}) => {
+const PhotoSliderDesktop = ({ images }) => {
     console.log(images);
     if (images) {
         const titledImages = images.map((img) => {
             return (
                 <div key={img.id} className="col-12 col-md-5 offset-md-1">
-                    <RenderImage image={img}/>
+                    <RenderImage image={img} />
                 </div>
             );
         });
@@ -33,7 +31,7 @@ const PhotoSliderDesktop = ({images}) => {
 /**
  * @return {null}
  */
-function RenderImage({image}) {
+function RenderImage({ image }) {
 
     if (!image) {
         return null;
@@ -43,7 +41,7 @@ function RenderImage({image}) {
             <Card>
                 <CardBody>
                     <CardTitle className="cases-image-title"><b>{image.title}</b></CardTitle>
-                    <CardImg width="100%" src={image.src} alt={image.name}/>
+                    <CardImg width="100%" src={image.src} alt={image.name} />
                 </CardBody>
             </Card>
         )

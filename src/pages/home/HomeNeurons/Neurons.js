@@ -11,13 +11,14 @@ class Neurons extends Component {
     render() {
         return (
             <div className='container'>
+
                 <div className="row neurons-section section-dimensions">
                     <div className="col-12">
-                        <Jumbotron className="neurons-section-inside section-dimensions">
-                            <Header {...this.props} />
+                        <Header {...this.props} />
+
+                        <Jumbotron className="neurons-section-inside">
 
                             <div className="container-fluid">
-
                                 <div className="row neurons-content-row">
                                     <div className="col-sm-12 col-lg-7">
                                         <div className="row">
@@ -26,7 +27,11 @@ class Neurons extends Component {
                                                     beforeInjection={svg => {
                                                         svg.classList.add('neurons-image')
                                                     }}
-                                                    src={assetsNeuronsImage} />
+                                                    src={assetsNeuronsImage}
+                                                    style={{
+                                                        // width: document.documentElement.clientWidth,
+                                                    }}
+                                                />
                                             </div>
                                         </div>
                                     </div>
@@ -41,8 +46,16 @@ class Neurons extends Component {
                                                 <img className="decor-explore"
                                                     src={assetsDecorLine}
                                                     alt="" />
-                                                <Button className="btn-big button-text" type="submit"
-                                                    href="#swp-section">EXPLORE</Button>
+                                                <Button
+                                                    className="btn-big button-text"
+                                                    onClick={() => {
+                                                        if (this.props.swiper) {
+                                                            this.props.swiper.slideNext();
+                                                        }
+                                                    }}
+                                                >
+                                                    {"EXPLORE"}
+                                                </Button>
                                             </div>
                                         </div>
                                     </div>

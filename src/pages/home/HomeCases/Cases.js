@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 import Swiper from 'react-id-swiper';
 import Image from "react-bootstrap/Image";
 import PhotoSliderDesktop from "./PhotoSliderDesktop";
@@ -15,8 +15,8 @@ class Cases extends Component {
         super(props);
 
         const imagesarray = [
-            {id: 1, title: 'Respage', src: assetsDesktopRespage},
-            {id: 2, title: 'PepTalkHer', src: assetsDesktopPepTalkHer}
+            { id: 1, title: 'Respage', src: assetsDesktopRespage },
+            { id: 2, title: 'PepTalkHer', src: assetsDesktopPepTalkHer }
         ];
 
         const swiperParams = {
@@ -51,18 +51,18 @@ class Cases extends Component {
                             <Swiper {...this.state.swiperParams}>
                                 <div>
                                     <Image className="carousel-image"
-                                           src={assetsMobileRespage}
-                                           alt=""/>
+                                        src={assetsMobileRespage}
+                                        alt="" />
                                 </div>
                                 <div>
                                     <Image className="carousel-image"
-                                           src={assetsMobilePepTalkHer}
-                                           alt=""/>
+                                        src={assetsMobilePepTalkHer}
+                                        alt="" />
                                 </div>
                             </Swiper>
                         </div>
                         <div className="row desktop-swiper">
-                            <PhotoSliderDesktop images={this.state.images}/>
+                            <PhotoSliderDesktop images={this.state.images} />
                         </div>
                         <div className="row cases-view-more">
                             <h1 className="cases-view-more-text">VIEW MORE</h1>
