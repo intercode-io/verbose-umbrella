@@ -3,9 +3,11 @@ import CardImg from "reactstrap/es/CardImg";
 import CardTitle from "reactstrap/es/CardTitle";
 import Card from "reactstrap/es/Card";
 import CardBody from "reactstrap/es/CardBody";
+import Image from "react-bootstrap/Image";
 
 
 const PhotoSliderDesktop = ({images}) => {
+    console.log(images);
     if (images) {
         const titledImages = images.map((img) => {
             return (
@@ -36,6 +38,7 @@ function RenderImage({image}) {
     if (!image) {
         return null;
     } else {
+        console.log(image.src);
         return (
             <Card>
                 <CardBody>
