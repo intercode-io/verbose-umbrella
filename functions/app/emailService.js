@@ -5,8 +5,7 @@ sgMail.setApiKey(sendGridKey);
 export async function send(data) {
     try {
         const msg = {
-            // to: 'sales@intercode.io',
-            to: 'yurapostevka@gmail.com',
+            to: 'sales@intercode.io',
             from: data.email,
             subject: 'Sales.',
             text: data.message,
