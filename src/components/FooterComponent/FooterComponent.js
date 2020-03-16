@@ -4,7 +4,12 @@ import './FooterComponent.scss'
 class FooterComponent extends Component {
     render() {
         return (
-            <div className="footer-container footer-dimensions">
+            <div className="footer-container footer-dimensions" style={{
+                position: "absolute",
+                bottom: 0,
+                left: 0,
+                width: document.documentElement.clientWidth,
+            }}>
                 <div className="container footer-container-inside">
                     <div className="row footer-row">
                         <div className="col-12 col-lg-4 footer-logo-mobile-container">

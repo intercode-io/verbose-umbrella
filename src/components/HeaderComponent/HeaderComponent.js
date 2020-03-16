@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react';
 import Navbar from "react-bootstrap/Navbar";
 import NavbarBrand from "react-bootstrap/NavbarBrand";
@@ -17,9 +18,31 @@ class Header extends Component {
                     <NavbarBrand className="desktop-menu">
                         <ul className="desktop-menu-list">
                             <li className="desktop-menu-item">
-                                <a className="href-text" href="#cases-section">Cases</a></li>
+                                <a
+                                    className="href-text"
+                                    onClick={() => {
+                                        if (this.props.swiper) {
+                                            this.props.swiper.slideNext();
+                                            this.props.swiper.slideNext();
+                                        }
+                                    }}
+                                >
+                                    {"Cases"}
+                                </a>
+                            </li>
                             <li className="desktop-menu-item-2">
-                                <a className="href-text" href="#cases-section">Company</a></li>
+                                <a
+                                    className="href-text"
+                                    onClick={() => {
+                                        if (this.props.swiper) {
+                                            this.props.swiper.slideNext();
+                                            this.props.swiper.slideNext();
+                                        }
+                                    }}
+                                >
+                                    {"Company"}
+                                </a>
+                            </li>
                         </ul>
                     </NavbarBrand>
 
