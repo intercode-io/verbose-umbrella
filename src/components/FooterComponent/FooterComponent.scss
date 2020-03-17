@@ -1,5 +1,6 @@
 .footer-container {
     position: relative;
+    display: flex;
 }
 
 .footer-container::before {
@@ -14,24 +15,27 @@
 }
 
 .footer-container-inside {
-    padding-top: 25px;
+    padding: 15px 15px 15px 15px;
     background-color: transparent;
     position: relative;
 }
 
 .footer-dimensions {
-    height: 238px;
+    height: 150px;
+    //height: 238px;
 }
 
 .footer-dimensions::before {
-    height: 238px;
+    height: 150px;
+    //height: 238px;
 }
 
 .footer-logo-mobile-container {
     display: flex;
     justify-content: center;
-    margin-top: 24px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+    //margin-top: 24px;
+    //margin-bottom: 30px;
 }
 
 .footer-logo-tablet-container {
@@ -40,15 +44,27 @@
 
 .footer-menu-list {
     list-style-type: none;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-menu-item {
-    margin-bottom: 20px;
+    //margin-bottom: 20px;
 }
 
 .footer-social-media {
+    //display: flex;
+    //place-self: center;
+    //padding-left: 0;
+    //justify-content: flex-end;
+    //padding-right: 30px;
     display: flex;
-    place-self: center;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 45px);
 
     :nth-child(2) {
         margin-left: 22px;
@@ -58,6 +74,17 @@
 .facebook-icon {
     margin-left: 22px;
 }
+
+.footer-menu {
+    height: calc(100% - 45px);
+}
+
+.footer-row {
+    height: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 
 @media (min-width: 768px) {
 
@@ -70,20 +97,26 @@
     }
 
     .footer-row {
-        height: 70%;
-        align-items: center;
+        //height: 70%;
+        //align-items: center;
+        height: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        justify-content: center;
+        align-content: center;
     }
 
     .footer-menu-list {
         display: flex;
         //place-content: space-between;
         margin-bottom: 0;
-        padding-left: 0;
+        //padding-left: 0;
     }
 
     .footer-logo-tablet-container {
         display: flex;
         justify-content: center;
+        align-items: center;
     }
 
     .footer-logo-mobile-container {
@@ -106,6 +139,10 @@
         margin-bottom: 0;
     }
 
+    .message-us-part {
+        margin-bottom: 80px;
+    }
+
 }
 
 
@@ -126,10 +163,13 @@
     .footer-logo-mobile-container {
         display: flex;
         justify-content: center;
+        align-items: center;
     }
 
     .footer-menu-list {
         justify-content: center;
+        flex-direction: row;
+        align-items: center;
     }
 
     .footer-logo-mobile-container {

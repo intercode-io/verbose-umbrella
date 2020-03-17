@@ -22,11 +22,11 @@ const FooterComponent = () => {
                             src={assetsLogo} />
                     </div>
                     <div className="col-4 footer-menu">
-                        <ul className="footer-menu-list">
-                            <li className="footer-menu-item">
-                                <a className="href-text" href="#cases-section">Cases</a></li>
-                            <li className="footer-menu-item-2">Company</li>
-                        </ul>
+                        <div className="footer-menu-list">
+                            <div className="footer-menu-item">
+                                <a className="href-text" href="#cases-section">Cases</a></div>
+                            <div className="footer-menu-item-2 href-text">Company</div>
+                        </div>
                     </div>
 
                     <div className="col-md-4 footer-logo-tablet-container">
