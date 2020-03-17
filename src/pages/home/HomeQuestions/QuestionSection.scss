@@ -32,8 +32,22 @@
 .question-section {
     //background-image: url("./questions_bkg_mobile_old.png");
     //min-height: 500px;
-    height: 100vh;
+    height: 100%;
     position: relative;
+
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+        line-height:130px;
+        overflow-y: hidden;
+    }
+    ::-webkit-input-placeholder { /* Webkit */
+        line-height:130px;
+        overflow-y: hidden;
+
+    }
+    :-ms-input-placeholder { /* IE */
+        line-height:130px;
+        overflow-y: hidden;
+    }
 
     .question-section-inside {
         /* This will make it stack on top of the ::before */
@@ -106,6 +120,7 @@
     }
 
     @media (min-width: 720px) {
+        height: 100vh;
         .our-benefits-mobile {
             display: none;
         }
