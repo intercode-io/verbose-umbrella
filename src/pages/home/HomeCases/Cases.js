@@ -44,7 +44,8 @@ class Cases extends Component {
                         <div className="row">
                             <div className="col-sm-12 cases-header">
                                 <h2 className="section-header-text cases-header-text">Cases
-                                    <span className="cases-shadow-span shadow-span">Cases</span></h2>
+                                    {/*<span className="cases-shadow-span shadow-span">Cases</span>*/}
+                                </h2>
                             </div>
                         </div>
                         <div className="row mobile-tablet-swiper">

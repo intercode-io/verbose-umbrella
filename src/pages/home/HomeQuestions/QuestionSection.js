@@ -7,6 +7,7 @@ import TextFieldControl from "../../../components/TextFieldControl";
 import FormValidators from "../../../helpers/form-validators";
 import EmailService from "../../../services/EmailService";
 import FooterComponent from "../../../components/FooterComponent/FooterComponent";
+import { TextField } from "@material-ui/core";
 
 const Alert = props => {
     return <MuiAlert elevation={6} variant="filled" {...props} />;
@@ -82,7 +83,7 @@ const QuestionSection = () => {
                     </div>
                     <div className="row message-us-part">
                         <div className="col-12 col-lg-8">
-                            <div className="col-6 offset-1">
+                            <div className="col-6 offset-1 offset-lg-0 message-us-parent">
                                 <h4 className="text msg-text">Message us</h4>
                             </div>
                             <Form
@@ -95,37 +96,93 @@ const QuestionSection = () => {
                                         <div className="row">
                                             <div className="col-10 offset-1 offset-lg-0">
                                                 <Field
-                                                    className="text-field"
                                                     name="name"
-                                                    component={TextFieldControl}
-                                                    type={"text"}
-                                                    placeholder="Name"
-                                                    validate={FormValidators.composeValidators(
-                                                        FormValidators.required("This field is required"))}
-                                                />
+                                                    validate={FormValidators.required("This field is required")}
+                                                >
+                                                    {props => {
+                                                        const {
+                                                            input: { name, onChange, value, ...restInput },
+                                                            meta,
+                                                        } = props;
+                                                        return (
+                                                            <TextField
+                                                                name={name}
+                                                                onChange={onChange}
+                                                                value={value}
+                                                                className="text-field"
+                                                                fullWidth
+                                                                label="Name"
+                                                                multiline
+                                                                rows="1"
+                                                                rowsMax="1"
+                                                                {...restInput}
+                                                                variant="filled"
+                                                                helperText={meta.touched ? meta.error || meta.submitError : undefined}
+                                                                error={(meta.error || meta.submitError) && meta.touched}
+                                                            />
+                                                        );
+                                                    }}
+                                                </Field>
+
                                                 <Field
-                                                    className="text-field"
                                                     name="email"
-                                                    component={TextFieldControl}
-                                                    type={"text"}
-                                                    placeholder="Email"
                                                     validate={FormValidators.composeValidators(
                                                         FormValidators.required(),
                                                         FormValidators.isEmail
-                                                    )}
-                                                />
+                                                    )}>
+                                                    {props => {
+                                                        const {
+                                                            input: { name, onChange, value, ...restInput },
+                                                            meta,
+                                                        } = props;
+                                                        return (
+                                                            <TextField
+                                                                name={name}
+                                                                onChange={onChange}
+                                                                value={value}
+                                                                className="text-field"
+                                                                fullWidth
+                                                                label="Email"
+                                                                multiline
+                                                                rows="1"
+                                                                rowsMax="1"
+                                                                {...restInput}
+                                                                variant="filled"
+                                                                helperText={meta.touched ? meta.error || meta.submitError : undefined}
+                                                                error={(meta.error || meta.submitError) && meta.touched}
+                                                            />
+                                                        );
+                                                    }}
+                                                </Field>
+
                                                 <Field
-                                                    className="text-field"
                                                     name="message"
-                                                    component={TextFieldControl}
-                                                    type={"text"}
-                                                    placeholder="Message"
-                                                    rows={"4"}
-                                                    rowsMax={"4"}
-                                                    multiline={true}
-                                                    validate={FormValidators.composeValidators(
-                                                        FormValidators.required("This field is required"))}
-                                                />
+                                                    validate={FormValidators.required("This field is required")}
+                                                >
+                                                    {props => {
+                                                        const {
+                                                            input: { name, onChange, value, ...restInput },
+                                                            meta,
+                                                        } = props;
+                                                        return (
+                                                            <TextField
+                                                                name={name}
+                                                                onChange={onChange}
+                                                                value={value}
+                                                                className="text-field"
+                                                                fullWidth
+                                                                label="Message"
+                                                                multiline
+                                                                rows="4"
+                                                                rowsMax="4"
+                                                                {...restInput}
+                                                                variant="filled"
+                                                                helperText={meta.touched ? meta.error || meta.submitError : undefined}
+                                                                error={(meta.error || meta.submitError) && meta.touched}
+                                                            />
+                                                        );
+                                                    }}
+                                                </Field>
                                             </div>
 
                                         </div>

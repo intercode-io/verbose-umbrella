@@ -10,7 +10,8 @@ class ServicesWeProvide extends Component {
                         <div className="row">
                             <div className="col-sm-12 services-we-provide-header">
                                 <h2 className="service-header-title section-header section-header-text">Services we provide
-                                    <span className="swp-shadow-span shadow-span">Services we provide</span></h2>
+                                    {/*<span className="swp-shadow-span shadow-span">Services we provide</span>*/}
+                                </h2>
                             </div>
                         </div>
                         <div className="row services-list-row">
