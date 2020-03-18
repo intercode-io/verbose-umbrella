@@ -28,9 +28,6 @@ class Neurons extends Component {
                                                         svg.classList.add('neurons-image')
                                                     }}
                                                     src={assetsNeuronsImage}
-                                                    style={{
-                                                        // width: document.documentElement.clientWidth,
-                                                    }}
                                                 />
                                             </div>
                                         </div>

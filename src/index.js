@@ -12,7 +12,6 @@ import './styles/default-components.scss'
 
 import './styles/ComponentStyles/buttons.scss'
 import './styles/ComponentStyles/text.scss'
-import './styles/ComponentStyles/bootstrap-classes.scss'
 import './styles/ComponentStyles/gui-elements.scss'
 
 import App from './App';

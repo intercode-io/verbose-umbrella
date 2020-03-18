@@ -22,20 +22,16 @@
 
 .footer-dimensions {
     height: 150px;
-    //height: 238px;
 }
 
 .footer-dimensions::before {
     height: 150px;
-    //height: 238px;
 }
 
 .footer-logo-mobile-container {
     display: flex;
     justify-content: center;
     margin-bottom: 15px;
-    //margin-top: 24px;
-    //margin-bottom: 30px;
 }
 
 .footer-logo-tablet-container {
@@ -51,16 +47,7 @@
     flex-direction: column;
 }
 
-.footer-menu-item {
-    //margin-bottom: 20px;
-}
-
 .footer-social-media {
-    //display: flex;
-    //place-self: center;
-    //padding-left: 0;
-    //justify-content: flex-end;
-    //padding-right: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,8 +84,6 @@
     }
 
     .footer-row {
-        //height: 70%;
-        //align-items: center;
         height: 100%;
         padding-left: 15px;
         padding-right: 15px;
@@ -108,9 +93,7 @@
 
     .footer-menu-list {
         display: flex;
-        //place-content: space-between;
         margin-bottom: 0;
-        //padding-left: 0;
     }
 
     .footer-logo-tablet-container {
@@ -142,7 +125,6 @@
     .message-us-part {
         margin-bottom: 80px;
     }
-
 }
 
 
