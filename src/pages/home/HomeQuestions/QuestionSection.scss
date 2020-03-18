@@ -7,7 +7,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 87%;
     background-image: url("../../../assets/images/svg/questions-images/questions_bkg_mobile.svg");
     filter: opacity(0.1);
     object-fit: fill;
@@ -18,22 +18,39 @@
 
 @media (min-width: 720px) {
     .question-section::before {
+        height: 97%;
         background-image: url("../../../assets/images/svg/questions-images/questions_bkg_tablet.svg");
     }
 }
 
 @media (min-width: 992px) {
     .question-section::before {
+        height: 91%;
         background-image: url("../../../assets/images/svg/questions-images/questions_bkg_desktop.svg");
     }
 }
 
 
 .question-section {
-    //background-image: url("./questions_bkg_mobile_old.png");
-    //min-height: 500px;
-    height: 100vh;
+    height: 100%;
     position: relative;
+
+    textarea {
+        overflow: hidden;
+    }
+
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+        line-height:130px;
+        overflow-y: hidden;
+    }
+    ::-webkit-input-placeholder { /* Webkit */
+        line-height:130px;
+        overflow-y: hidden;
+    }
+    :-ms-input-placeholder { /* IE */
+        line-height:130px;
+        overflow-y: hidden;
+    }
 
     .question-section-inside {
         /* This will make it stack on top of the ::before */
@@ -67,7 +84,6 @@
 
     .message-us-part {
         margin-top: 50px;
-        //margin-left: 20px;
     }
 
     .input-form {
@@ -89,7 +105,8 @@
 
     .contact-form {
         margin-top: 30px;
-        margin-left: 20px;
+        margin-left: 15px;
+        margin-bottom: 30px;
     }
 
     .text-field {
@@ -106,6 +123,8 @@
     }
 
     @media (min-width: 720px) {
+        height: 100vh;
+
         .our-benefits-mobile {
             display: none;
         }

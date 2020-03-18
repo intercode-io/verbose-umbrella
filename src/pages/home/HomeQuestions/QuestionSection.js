@@ -120,8 +120,8 @@ const QuestionSection = () => {
                                                     component={TextFieldControl}
                                                     type={"text"}
                                                     placeholder="Message"
-                                                    rows={"1"}
-                                                    rowsMax={"3"}
+                                                    rows={"4"}
+                                                    rowsMax={"4"}
                                                     multiline={true}
                                                     validate={FormValidators.composeValidators(
                                                         FormValidators.required("This field is required"))}
