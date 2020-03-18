@@ -1,16 +1,43 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 import './ServicesWeProvideSection.scss'
+import BackgroundLines from '../../../components/BgLines/BgLines';
 
 class ServicesWeProvide extends Component {
     render() {
         return (
             <div className="container" id="swp-section">
-                <div className="swp-row section-dimensions">
-                    <div className="container-fluid">
+                <div className="swp-row section-dimensions services-section">
+                    <BackgroundLines />
+                    <div className="container-fluid service-section">
                         <div className="row">
                             <div className="col-sm-12 services-we-provide-header">
+                                <div className="sub-bg-lines">
+                                    <div className="sub-bg-line">
+                                        <div className="line-horizontal line-horizontal-post" />
+                                        <div className="line-pointer">
+                                        </div>
+                                    </div>
+                                    <div className="sub-bg-line">
+                                        <div className="line-pointer">
+                                        </div>
+                                    </div>
+                                    <div className="sub-bg-line">
+                                        <div className="line-pointer">
+                                        </div>
+                                    </div>
+                                    <div className="sub-bg-line">
+                                        <div className="line-pointer">
+                                        </div>
+                                    </div>
+                                    <div className="sub-bg-line">
+                                        <div className="line-horizontal line-horizontal-pre" />
+                                        <div className="line-pointer">
+                                        </div>
+                                    </div>
+                                </div>
                                 <h2 className="service-header-title section-header section-header-text">Services we provide
-                                    {/*<span className="swp-shadow-span shadow-span">Services we provide</span>*/}
+                                        <h2 className="shadow-h">Services we provide
+                                        </h2>
                                 </h2>
                             </div>
                         </div>
@@ -28,7 +55,7 @@ class ServicesWeProvide extends Component {
 
                                     <div className="col-sm-12 mobile-dev-row-all col-lg-3 offset-lg-1 swp-item">
                                         <div className="blue-circles mobile-circle"></div>
-                                        <p className="service-title">Mobile Development <br/> </p>
+                                        <p className="service-title">Mobile Development <br /> </p>
                                         <p className="services-description">
                                             We ship world class applications for iOS and Android.
                                         </p>
@@ -56,7 +83,8 @@ class ServicesWeProvide extends Component {
                                         <div className="blue-circles mobile-circle"></div>
                                         <p className="service-title">Back-end Development</p>
                                         <p className="services-description two-row-title-p">
-                                            Developing reliable, scalable and long-living servers and microservices                                    </p>
+                                            Developing reliable, scalable and long-living servers and microservices
+                                        </p>
                                     </div>
 
                                     <div className="col-sm-12 col-md-3 offset-md-3 col-lg-3 offset-lg-1 swp-item">

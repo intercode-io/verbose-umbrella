@@ -12,6 +12,7 @@ const HomePage = () => {
     const [swiper, setSwiper] = useState(null);
     // const isMobile = document.documentElement.clientWidth < 600;
     const isMobile = true;
+
     useEffect(() => {
         if (swiper !== null) {
             swiper.on("resize", () => {
@@ -28,6 +29,7 @@ const HomePage = () => {
             swiper && swiper.slideNext();
         }
     };
+
     return (
         <>
             <div>

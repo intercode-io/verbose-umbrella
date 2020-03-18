@@ -68,6 +68,22 @@ li {
     color: #000000;
     font-size: 28px;
     font-weight: bold;
+    position: relative;
+    display: inline-block;
+    width: auto;
+
+    .shadow-h {
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+        top: -10px;
+        left: 52%;
+        transform: translateX(-50%);
+        color: transparent;
+        font-size: 60px;
+        white-space: nowrap;
+        text-shadow: 5px -19px 8px #E6E3F7;
+    }
 }
 
 .contact-title {

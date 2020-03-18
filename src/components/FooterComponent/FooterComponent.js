@@ -7,14 +7,8 @@ import assetsFacebook from '../../assets/images/svg/social-media/facebook.svg'
 import assetsInstagram from '../../assets/images/svg/social-media/instagram.svg'
 
 const FooterComponent = () => {
-    const isMobile = document.documentElement.clientWidth < 600;
     return (
-        <div className="footer-container footer-dimensions" style={{
-            position: isMobile ? "block" : "absolute",
-            bottom: 0,
-            left: 0,
-            width: document.documentElement.clientWidth,
-        }}>
+        <div className="footer-container footer-dimensions">
             <div className="container footer-container-inside">
                 <div className="row footer-row">
                     <div className="col-12 col-lg-4 footer-logo-mobile-container">

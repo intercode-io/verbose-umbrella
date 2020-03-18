@@ -5,7 +5,7 @@ import NavbarBrand from "react-bootstrap/NavbarBrand";
 import './HeaderSection.scss'
 import assetsMobileMenu from '../../assets/decorations/mobile/menu.svg'
 import assetsLogo from '../../assets/images/svg/InterCode_logo.svg'
-import {ReactSVG} from "react-svg";
+import { ReactSVG } from "react-svg";
 
 class Header extends Component {
     render() {
@@ -14,7 +14,7 @@ class Header extends Component {
                 <div className="brand-container container">
 
                     <NavbarBrand className="top-menu-mobile">
-                        <ReactSVG src={assetsMobileMenu}/>
+                        <ReactSVG src={assetsMobileMenu} />
                     </NavbarBrand>
 
                     <NavbarBrand className="desktop-menu">

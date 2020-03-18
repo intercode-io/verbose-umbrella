@@ -1,9 +1,13 @@
 .section-dimensions {
-    height: 100vh;
+    height: 120vh;
+
+    &>.row {
+        z-index: 5;
+    }
 }
 
 .section-dimensions::before {
-    height: 100vh;
+    height: 120vh;
 }
 
 .section-header {

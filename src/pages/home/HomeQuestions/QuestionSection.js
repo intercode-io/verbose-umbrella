@@ -204,15 +204,15 @@ const QuestionSection = () => {
                             <div className="row contact-form">
                                 <div className="col-12 col-md-4 col-lg-12">
                                     <p className="contact-title">Our phone</p>
-                                    <p className="text1">+380000000000</p>
+                                    <p className="text1">+380990278541</p>
                                 </div>
                                 <div className="col-12 col-md-4 col-lg-12">
                                     <p className="contact-title">Our email</p>
-                                    <p className="text1">potrpots@gmail.com</p>
+                                    <p className="text1">sales@intercode.io</p>
                                 </div>
                                 <div className="col-12 col-md-4 col-lg-12">
                                     <p className="contact-title">Our office</p>
-                                    <p className="text1">United Kingdom 99 Staple <br /> Hill Road, Bristol, BS16 5AD</p>
+                                    <p className="text1">Bohdana Khmelnytskoho st. 69a <br /> Chernivtsi, Ukraine</p>
                                 </div>
                             </div>
                         </div>
