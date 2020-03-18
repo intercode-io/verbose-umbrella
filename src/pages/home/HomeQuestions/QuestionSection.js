@@ -7,6 +7,7 @@ import TextFieldControl from "../../../components/TextFieldControl";
 import FormValidators from "../../../helpers/form-validators";
 import EmailService from "../../../services/EmailService";
 import FooterComponent from "../../../components/FooterComponent/FooterComponent";
+import { TextField } from "@material-ui/core";
 
 const Alert = props => {
     return <MuiAlert elevation={6} variant="filled" {...props} />;
@@ -115,17 +116,31 @@ const QuestionSection = () => {
                                                     )}
                                                 />
                                                 <Field
-                                                    className="text-field"
                                                     name="message"
-                                                    component={TextFieldControl}
-                                                    type={"text"}
-                                                    placeholder="Message"
-                                                    rows={"4"}
-                                                    rowsMax={"4"}
-                                                    multiline={true}
-                                                    validate={FormValidators.composeValidators(
-                                                        FormValidators.required("This field is required"))}
-                                                />
+                                                    validate={FormValidators.required("This field is required")}
+                                                >
+                                                    {props => {
+                                                        const {
+                                                            input: { name, onChange, value, ...restInput },
+                                                            meta,
+                                                        } = props;
+                                                        return (
+                                                            <TextField
+                                                                name={name}
+                                                                onChange={onChange}
+                                                                value={value}
+                                                                className="text-field"
+                                                                label="Message"
+                                                                multiline
+                                                                rows="4"
+                                                                {...restInput}
+                                                                variant="filled"
+                                                                helperText={meta.touched ? meta.error || meta.submitError : undefined}
+                                                                error={(meta.error || meta.submitError) && meta.touched}
+                                                            />
+                                                        );
+                                                    }}
+                                                </Field>
                                             </div>
 
                                         </div>
