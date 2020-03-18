@@ -10,8 +10,8 @@ import Swiper from 'react-id-swiper';
 
 const HomePage = () => {
     const [swiper, setSwiper] = useState(null);
-    const isMobile = document.documentElement.clientWidth < 600;
-
+    // const isMobile = document.documentElement.clientWidth < 600;
+    const isMobile = true;
     useEffect(() => {
         if (swiper !== null) {
             swiper.on("resize", () => {
@@ -27,7 +27,7 @@ const HomePage = () => {
         } else {
             swiper && swiper.slideNext();
         }
-    }
+    };
     return (
         <>
             <div>

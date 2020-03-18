@@ -7,7 +7,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 87%;
+    height: 90%;
     background-image: url("../../../assets/images/svg/questions-images/questions_bkg_mobile.svg");
     filter: opacity(0.1);
     object-fit: fill;
@@ -35,21 +35,13 @@
     height: 100%;
     position: relative;
 
-    textarea {
-        overflow: hidden;
+    label {
+        color: $blue2;
+        font-family: Montserrat, serif;
     }
 
-    ::-moz-placeholder { /* Mozilla Firefox 19+ */
-        line-height:130px;
-        overflow-y: hidden;
-    }
-    ::-webkit-input-placeholder { /* Webkit */
-        line-height:130px;
-        overflow-y: hidden;
-    }
-    :-ms-input-placeholder { /* IE */
-        line-height:130px;
-        overflow-y: hidden;
+    .MuiFormLabel-root.Mui-focused {
+        color: $blue;
     }
 
     .question-section-inside {
@@ -120,6 +112,11 @@
 
     .questions-header {
         margin-bottom: 20px;
+    }
+
+
+    .message-us-parent {
+        padding-left: 0;
     }
 
     @media (min-width: 720px) {
