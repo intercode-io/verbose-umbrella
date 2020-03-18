@@ -42,14 +42,11 @@ class Neurons extends Component {
                                             <div className="button-container col-sm-12 col-md-4 col-lg-auto">
                                                 <img className="decor-explore"
                                                     src={assetsDecorLine}
-                                                    alt="" />
+                                                    alt=""
+                                                />
                                                 <Button
                                                     className="btn-big button-text"
-                                                    onClick={() => {
-                                                        if (this.props.swiper) {
-                                                            this.props.swiper.slideNext();
-                                                        }
-                                                    }}
+                                                    onClick={this.props.onExploreClick}
                                                 >
                                                     {"EXPLORE"}
                                                 </Button>

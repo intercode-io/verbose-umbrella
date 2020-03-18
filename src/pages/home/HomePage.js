@@ -11,13 +11,22 @@ import Swiper from 'react-id-swiper';
 const HomePage = () => {
     const [swiper, setSwiper] = useState(null);
     const isMobile = document.documentElement.clientWidth < 600;
+
+    const onExploreClick = () => {
+        if (isMobile) {
+            // scroll with href to specific if
+            window.location.hash = "#swp-section";
+        } else {
+            swiper && swiper.slideNext();
+        }
+    }
     return (
         <>
             <div>
                 {isMobile
                     ? (
                         <>
-                            <Neurons />
+                            <Neurons onExploreClick={onExploreClick} />
                             <ServicesWeProvide />
                             <Cases />
                             <OurBenefits />
@@ -34,7 +43,7 @@ const HomePage = () => {
                             speed={700}
                         >
                             <div>
-                                <Neurons swiper={swiper} />
+                                <Neurons onExploreClick={onExploreClick} />
                             </div>
                             <div>
                                 <ServicesWeProvide />
