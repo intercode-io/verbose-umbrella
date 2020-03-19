@@ -1,29 +1,35 @@
 $offset: 16.6%;
 
 .bg-lines-wrap {
-    display: block;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    z-index: 1;
-    top: 0px;
-    left: 0px;
+    display: none;
+}
 
-    .bg-line {
+@media (min-width: 720px) {
+    .bg-lines-wrap {
         display: block;
+        height: 100%;
+        width: 100%;
         position: absolute;
         z-index: 1;
-        left: 0px;
         top: 0px;
-        background-color: #E7E7E7;
-        width: 1px;
-        height: 100%;
-    }
+        left: 0px;
 
-    .bg-line:nth-child(2) { left: $offset }
-    .bg-line:nth-child(3) { left: 2 * $offset }
-    .bg-line:nth-child(4) { left: 3 * $offset }
-    .bg-line:nth-child(5) { left: 4 * $offset }
-    .bg-line:nth-child(6) { left: 5 * $offset }
-    .bg-line:nth-child(7) { right: 0px; left: auto; }
+        .bg-line {
+            display: block;
+            position: absolute;
+            z-index: 1;
+            left: 0px;
+            top: 0px;
+            background-color: #E7E7E7;
+            width: 1px;
+            height: 100%;
+        }
+
+        .bg-line:nth-child(2) { left: $offset }
+        .bg-line:nth-child(3) { left: 2 * $offset }
+        .bg-line:nth-child(4) { left: 3 * $offset }
+        .bg-line:nth-child(5) { left: 4 * $offset }
+        .bg-line:nth-child(6) { left: 5 * $offset }
+        .bg-line:nth-child(7) { right: 0px; left: auto; }
+    }
 }

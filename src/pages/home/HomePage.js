@@ -7,6 +7,7 @@ import OurBenefits from "./HomeOurBenefits/OurBenefits";
 import QuestionSection from "./HomeQuestions/QuestionSection";
 
 import Swiper from 'react-id-swiper';
+import FooterComponent from "../../components/FooterComponent/FooterComponent";
 
 const HomePage = () => {
     const [swiper, setSwiper] = useState(null);
@@ -41,6 +42,7 @@ const HomePage = () => {
                             <Cases />
                             <OurBenefits />
                             <QuestionSection />
+                            <FooterComponent />
                         </>
                     )
                     : (

@@ -217,7 +217,7 @@ const QuestionSection = () => {
                         </div>
                     </div>
                 </div>
-                <FooterComponent />
+                {/*<FooterComponent />*/}
             </div>
         </div >
     );

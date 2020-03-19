@@ -4,42 +4,37 @@ import BackgroundLines from '../../../components/BgLines/BgLines';
 
 class ServicesWeProvide extends Component {
     render() {
-        const isMobile = document.documentElement.clientWidth < 720;
         return (
             <div className="container" id="swp-section">
                 <div className="swp-row section-dimensions services-section">
-                    { !isMobile ? <BackgroundLines /> : null }
+                    <BackgroundLines />
                     <div className="container-fluid service-section">
                         <div className="row">
                             <div className="col-sm-12 services-we-provide-header">
-                                {
-                                    !isMobile ?
-                                        <div className="sub-bg-lines">
-                                            <div className="sub-bg-line">
-                                                <div className="line-horizontal line-horizontal-post" />
-                                                <div className="line-pointer">
-                                                </div>
-                                            </div>
-                                            <div className="sub-bg-line">
-                                                <div className="line-pointer">
-                                                </div>
-                                            </div>
-                                            <div className="sub-bg-line">
-                                                <div className="line-pointer">
-                                                </div>
-                                            </div>
-                                            <div className="sub-bg-line">
-                                                <div className="line-pointer">
-                                                </div>
-                                            </div>
-                                            <div className="sub-bg-line">
-                                                <div className="line-horizontal line-horizontal-pre" />
-                                                <div className="line-pointer">
-                                                </div>
-                                            </div>
+                                <div className="sub-bg-lines">
+                                    <div className="sub-bg-line">
+                                        <div className="line-horizontal line-horizontal-post" />
+                                        <div className="line-pointer">
                                         </div>
-                                        : null
-                                }
+                                    </div>
+                                    <div className="sub-bg-line">
+                                        <div className="line-pointer">
+                                        </div>
+                                    </div>
+                                    <div className="sub-bg-line">
+                                        <div className="line-pointer">
+                                        </div>
+                                    </div>
+                                    <div className="sub-bg-line">
+                                        <div className="line-pointer">
+                                        </div>
+                                    </div>
+                                    <div className="sub-bg-line">
+                                        <div className="line-horizontal line-horizontal-pre" />
+                                        <div className="line-pointer">
+                                        </div>
+                                    </div>
+                                </div>
                                 <h2 className="service-header-title section-header section-header-text">Services we provide
                                         <span className="shadow-h h2-style">Services we provide
                                         </span>
