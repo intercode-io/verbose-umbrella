@@ -3,7 +3,6 @@ import Snackbar from '@material-ui/core/Snackbar';
 import MuiAlert from '@material-ui/lab/Alert';
 import './QuestionSection.scss'
 import { Field, Form } from "react-final-form";
-import TextFieldControl from "../../../components/TextFieldControl";
 import FormValidators from "../../../helpers/form-validators";
 import EmailService from "../../../services/EmailService";
 import FooterComponent from "../../../components/FooterComponent/FooterComponent";
