@@ -36,7 +36,7 @@ class ServicesWeProvide extends Component {
                                     </div>
                                 </div>
                                 <h2 className="service-header-title section-header section-header-text">Services we provide
-                                        <span className="shadow-h h2-style">Services we provide
+                                        <span className="shadow-h">Services we provide
                                         </span>
                                 </h2>
                             </div>
