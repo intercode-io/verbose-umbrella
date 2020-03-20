@@ -33,9 +33,9 @@ class Neurons extends Component {
                                         </div>
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-5">
+                                    <div className="col-sm-12 col-lg-5 no-padding">
                                         <div className="row neurons-text-and-button-row">
-                                            <div className="header-text-group col-sm-12 col-md-8 col-lg-auto">
+                                            <div className="header-text-group col-sm-12 col-md-8 col-lg-auto no-padding">
                                                 <h1 className="header-text-neurons">Our Neurons <br /> Work For You</h1>
                                             </div>
 
