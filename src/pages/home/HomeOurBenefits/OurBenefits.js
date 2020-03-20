@@ -24,15 +24,15 @@ class OurBenefits extends Component {
         }
     }
     render() {
-
+        const isMobile = document.documentElement.clientWidth < 720;
         return (
             <div className="container section-dimensions benefits-section">
-                <BackgroundLines />
+                { !isMobile ? <BackgroundLines /> : null }
                 <div className="row">
-                    <div className="col-sm-12">
+                    <div className="col-sm-12 section-header-container ">
                         <h2 className="section-header section-header-text">Our benefits
-                            <h2 className="shadow-h">Our benefits
-                            </h2>
+                            <span className="shadow-h benefits-h">Our benefits
+                            </span>
                         </h2>
                     </div>
                 </div>

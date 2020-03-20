@@ -3,7 +3,6 @@ import Snackbar from '@material-ui/core/Snackbar';
 import MuiAlert from '@material-ui/lab/Alert';
 import './QuestionSection.scss'
 import { Field, Form } from "react-final-form";
-import TextFieldControl from "../../../components/TextFieldControl";
 import FormValidators from "../../../helpers/form-validators";
 import EmailService from "../../../services/EmailService";
 import FooterComponent from "../../../components/FooterComponent/FooterComponent";
@@ -88,9 +87,12 @@ const QuestionSection = () => {
                             </div>
                             <Form
                                 onSubmit={onSubmit}
-                                render={({ handleSubmit, form, submitting }) => (
+                                render={({ handleSubmit, form, submitting, valid }) => (
                                     <form onSubmit={async (values) => {
                                         await handleSubmit(values);
+                                        form.resetFieldState('name');
+                                        form.resetFieldState('email');
+                                        form.resetFieldState('message');
                                         setTimeout(form.reset);
                                     }}>
                                         <div className="row">
@@ -190,7 +192,7 @@ const QuestionSection = () => {
                                         <div className="button-container">
                                             <button
                                                 className="send-btn send-btn-margins button-text"
-                                                disabled={submitting}>
+                                                disabled={submitting || !valid}>
                                                 {"SEND"}
                                             </button>
 
@@ -218,7 +220,6 @@ const QuestionSection = () => {
                         </div>
                     </div>
                 </div>
-                <FooterComponent />
             </div>
         </div >
     );

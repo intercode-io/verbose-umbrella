@@ -41,18 +41,6 @@
         justify-content: center;
     }
 
-    .cases-shadow-span {
-        font-family: HelveticaNeueCyr, serif;
-        position: absolute;
-        z-index: 0;
-        font-size: 30px;
-        filter: blur(2px);
-        opacity: 10%;
-        top: -16px;
-        left: 38%;
-    }
-
-
     .cases-view-more {
         display: flex;
         justify-content: flex-end;
@@ -81,28 +69,12 @@
     }
 
 
-    @media (min-width: 768px) {
-        .cases-shadow-span {
-            position: absolute;
-            z-index: 1;
-            font-size: 64px;
-            top: -25px;
-            left: 36%;
-        }
-    }
-
     @media (min-width: 992px) {
 
         .cases-header {
             text-align: left;
         }
 
-        .cases-shadow-span {
-            font-size: 50pt;
-            filter: blur(2px);
-            top: -15px;
-            left: 10px;
-        }
 
         .mobile-tablet-swiper {
             display: none;

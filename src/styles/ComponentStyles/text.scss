@@ -39,9 +39,7 @@ li {
 .shadow-span {
     position: absolute;
     z-index: 1;
-    opacity: 10%;
-    font-size: 30px;
-    filter: blur(2px);
+    opacity: 40%;
 }
 
 .text {
@@ -77,10 +75,10 @@ li {
         width: 100%;
         z-index: -1;
         top: -10px;
-        left: 52%;
+        left: 35%;
         transform: translateX(-50%);
         color: transparent;
-        font-size: 60px;
+        font-size: 35px;
         white-space: nowrap;
         text-shadow: 5px -19px 8px #E6E3F7;
     }
@@ -110,6 +108,10 @@ li {
     text-decoration: none;
 }
 
+.section-header-container {
+    text-align: center;
+}
+
 @media (min-width: 360px) {
     h1 {
         font-size: 40px;
@@ -118,6 +120,7 @@ li {
     h2 {
         font-size: 28px;
     }
+
 }
 
 @media (min-width: 768px) {
@@ -129,12 +132,20 @@ li {
         font-size: 48px;
     }
 
-    .shadow-span {
-        font-size: 64px;
+    .section-header-text {
+        .shadow-h {
+            font-size: 60px;
+            left: 35%;
+        }
     }
 }
 
 @media (min-width: 992px) {
+
+    .section-header-container {
+        text-align: left;
+    }
+
     h1 {
         font-size: 59px;
     }
