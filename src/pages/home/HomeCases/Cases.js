@@ -41,9 +41,15 @@ class Cases extends Component {
             <div className="container-fluid" id="cases-section">
                 <div className="row section-dimensions  cases-section">
                     <div className="container cases-section-inside section-dimensions">
+                        <div className="bg-lines-wrap">
+                            <div className="bg-line-wrap-cases">
+                            </div>
+                            <div className="bg-line-wrap-cases">
+                            </div>
+                        </div>
                         <div className="row">
                             <div className="col-sm-12 cases-header">
-                                <h2 className="section-header-text cases-header-text">Cases
+                                    <h2 className="section-header-text cases-header-text">Cases
                                     <span className="shadow-span shadow-h">Cases</span>
                                 </h2>
                             </div>
