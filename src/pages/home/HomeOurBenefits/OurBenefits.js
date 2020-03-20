@@ -29,7 +29,7 @@ class OurBenefits extends Component {
             <div className="container section-dimensions benefits-section">
                 { !isMobile ? <BackgroundLines /> : null }
                 <div className="row">
-                    <div className="col-sm-12 section-header-container">
+                    <div className="col-sm-12 section-header-container ">
                         <h2 className="section-header section-header-text">Our benefits
                             <span className="shadow-h benefits-h">Our benefits
                             </span>

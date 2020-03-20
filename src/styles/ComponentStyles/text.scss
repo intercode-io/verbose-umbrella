@@ -149,6 +149,11 @@ li {
 }
 
 @media (min-width: 992px) {
+
+    .section-header-container {
+        text-align: left;
+    }
+
     h1 {
         font-size: 59px;
     }

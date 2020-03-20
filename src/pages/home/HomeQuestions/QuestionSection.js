@@ -87,9 +87,12 @@ const QuestionSection = () => {
                             </div>
                             <Form
                                 onSubmit={onSubmit}
-                                render={({ handleSubmit, form, submitting }) => (
+                                render={({ handleSubmit, form, submitting, valid }) => (
                                     <form onSubmit={async (values) => {
                                         await handleSubmit(values);
+                                        form.resetFieldState('name');
+                                        form.resetFieldState('email');
+                                        form.resetFieldState('message');
                                         setTimeout(form.reset);
                                     }}>
                                         <div className="row">
@@ -189,7 +192,7 @@ const QuestionSection = () => {
                                         <div className="button-container">
                                             <button
                                                 className="send-btn send-btn-margins button-text"
-                                                disabled={submitting}>
+                                                disabled={submitting || !valid}>
                                                 {"SEND"}
                                             </button>
 
@@ -217,7 +220,6 @@ const QuestionSection = () => {
                         </div>
                     </div>
                 </div>
-                {/*<FooterComponent />*/}
             </div>
         </div >
     );
