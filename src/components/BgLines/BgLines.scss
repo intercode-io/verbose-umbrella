@@ -46,11 +46,11 @@ $offset: 16.6%;
         display: block;
         position: absolute;
         z-index: 1;
-        left: $offset + 0.9%;
+        left: $offset;
         top: 0px;
         background-color: $blue;
         width: 1px;
         height: 100%;
     }
-    .bg-line-wrap-cases:nth-child(2) {left: 5 * $offset - 0.9% }
+    .bg-line-wrap-cases:nth-child(2) {left: 5 * $offset }
 }
