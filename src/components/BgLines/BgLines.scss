@@ -1,8 +1,11 @@
+@import "./../../styles/colors";
+
 $offset: 16.6%;
 
 .bg-lines-wrap {
     display: none;
 }
+
 
 @media (min-width: 720px) {
     .bg-lines-wrap {
@@ -32,4 +35,22 @@ $offset: 16.6%;
         .bg-line:nth-child(6) { left: 5 * $offset }
         .bg-line:nth-child(7) { right: 0px; left: auto; }
     }
+
+    .bg-line-wrap-cases {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .bg-line-wrap-cases {
+        display: block;
+        position: absolute;
+        z-index: 1;
+        left: $offset;
+        top: 0px;
+        background-color: $blue;
+        width: 1px;
+        height: 100%;
+    }
+    .bg-line-wrap-cases:nth-child(2) {left: 5 * $offset }
 }

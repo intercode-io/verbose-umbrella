@@ -5,7 +5,6 @@ import './QuestionSection.scss'
 import { Field, Form } from "react-final-form";
 import FormValidators from "../../../helpers/form-validators";
 import EmailService from "../../../services/EmailService";
-import FooterComponent from "../../../components/FooterComponent/FooterComponent";
 import { TextField } from "@material-ui/core";
 
 const Alert = props => {
