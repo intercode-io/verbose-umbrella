@@ -9,6 +9,12 @@ import assetsDecorLine from '../../../assets/decorations/lines/explore-line.svg'
 
 class Neurons extends Component {
     render() {
+
+        const onExploreClick = () => {
+            // scroll with href to specific if
+            window.location.hash = "#swp-section";
+        };
+
         return (
             <div className='container'>
 
@@ -46,7 +52,7 @@ class Neurons extends Component {
                                                 />
                                                 <Button
                                                     className="btn-big button-text"
-                                                    onClick={this.props.onExploreClick}
+                                                    onClick={onExploreClick}
                                                 >
                                                     {"EXPLORE"}
                                                 </Button>
