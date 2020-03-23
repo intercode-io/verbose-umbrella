@@ -1,5 +1,6 @@
 .section-dimensions {
     height: 120vh;
+    transition: all 0.3s ease;
 
     &>.row {
         z-index: 5;
@@ -8,6 +9,7 @@
 
 .section-dimensions::before {
     height: 120vh;
+    transition: all 0.3s ease;
 }
 
 .section-header {
