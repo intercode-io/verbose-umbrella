@@ -54,7 +54,7 @@ class Cases extends Component {
                                     <span className="shadow-span shadow-h">Cases</span>
                                 </h2>
                             </div>
-                            <div className="col-lg-3 offset-lg-5 cases-view-more-top">
+                            <div className="col-lg-3 offset-lg-5 cases-view-more-top disabled-button">
                                 <img className="decor-line-dot"
                                      src={assetsDecorLine}
                                      alt=""
@@ -79,7 +79,7 @@ class Cases extends Component {
                         <div className="row desktop-swiper">
                             <PhotoSliderDesktop images={this.state.images} />
                         </div>
-                        <div className="row cases-view-more">
+                        <div className="row cases-view-more disabled-button" >
                             <div className="col-sm-4 cases-view-more-bottom">
                                 <img className="decor-line-dot-cases-bottom"
                                      src={assetsDecorLine}
