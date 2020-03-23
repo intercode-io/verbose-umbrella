@@ -24,7 +24,7 @@ class Header extends Component {
                                     {"Cases"}
                                 </a>
                             </li>
-                            <li className="desktop-menu-item-2 disabled-button">
+                            <li className="desktop-menu-item-2 invisible">
                                 <a className="href-text" href="">
                                     {"Company"}
                                 </a>

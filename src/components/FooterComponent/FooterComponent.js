@@ -19,7 +19,7 @@ const FooterComponent = () => {
                         <div className="footer-menu-list">
                             <div className="footer-menu-item">
                                 <a className="href-text" href="#cases-section">Cases</a></div>
-                            <div className="footer-menu-item-2 href-text disabled-button">Company</div>
+                            <div className="footer-menu-item-2 href-text invisible">Company</div>
                         </div>
                     </div>
 
@@ -28,7 +28,7 @@ const FooterComponent = () => {
                             src={assetsLogo} />
                     </div>
 
-                    <div className="col-4 offset-4 offset-md-0 footer-social-media disabled-button">
+                    <div className="col-4 offset-4 offset-md-0 footer-social-media invisible">
                         <ReactSVG
                             src={assetsInstagram} />
                         <ReactSVG
