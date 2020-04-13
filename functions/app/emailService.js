@@ -1,13 +1,11 @@
-import { sendGridKey } from "./constants"
+import { sendGridKey, sendGridToAdress } from "./constants"
 const sgMail = require('@sendgrid/mail');
 sgMail.setApiKey(sendGridKey);
-
-const to = process.env.SENDGRID_TO_ADDRESS;
 
 export async function send(data) {
     try {
         const msg = {
-            to,
+            to: sendGridToAdress,
             from: data.email,
             subject: 'Sales.',
             text: data.message,
