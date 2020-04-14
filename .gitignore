@@ -4,7 +4,9 @@
 /node_modules
 /.pnp
 .pnp.js
-
+./gatsby-app/*
+./react-app/node_modules
+react-app/node_modules
 # testing
 /coverage
 
